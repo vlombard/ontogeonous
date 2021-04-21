@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.purl.org/ontogeonous/geologic_feature#"
+     xml:base="http://www.purl.org/ontogeonous/geologic_feature"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/geologic_feature">
+        <rdfs:comment>GUIDE FOR A COMPLETE USE OF THE PRESENT ONTOLOGY
+For a complete reading of the ontology, it is useful to import the following ontologies:
+-OGN_0.1-ExternalVacabularies http://www.purl.org/ontogeonous/externalVocabularies
+-OGN_0.2-Properties http://www.purl.org/ontogeonous/properties
+
+The ontologies of the developed subclasses are:
+-OGN_1.1-GeologicUnit http://www.purl.org/ontogeonous/geologicUnit
+-OGN_1.2-GeologicStructure http://www.purl.org/ontogeonous/geologicStructure</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasComposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasComposition">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventEnvironment"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventProcess"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicStructureAssociationMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicStructureAssociationMember">
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicUnit">
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeometricalObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeometricalObject">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+        <rdfs:range rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasHierarchyLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasHierarchyLink">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasLandformShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasLandformShape"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasMaterial">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasNamedAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasNamedAge"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNamedAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNamedAge"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasTargetUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasTargetUnit">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNamedAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNamedAge"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#isCreatedByProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#isCreatedByProcess"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#isEventRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#isEventRelatedTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNumericAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNumericAge"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNumericAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNumericAge"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/GeometricalObject -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#Shape -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#Shape"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicAssociation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicAssociation">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+        <rdfs:label>Geologic association</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicEvent -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicEvent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNamedAge"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNamedAge"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNumericAge"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNumericAge"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasNamedAge"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#isEventRelatedTo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventEnvironment"/>
+                        <owl:allValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#70
+Geologic Event is a package of classes to describe identifiable events during which one or more geological processes act to modify geological entities. A GeologicEvent has a specified geologic age and may have specified environments and processes.  Traditionally, geologists have described the age of a feature without explicitly specifying the event or processes the age relates to (age of a pluton is implicitly the age of the crystallization event). The GeologicEvent class allows explicit documentation of the process and environment.
+
+GeologicalHistory is an ordered aggregation of GeologicalEvent objects, each of which may have an associated geological age, geological environment, and one or more geological process.
+
+The age attributes are representations of a particular geological event or feature expressed as absolute age in terms of years (numericAge) before present or named time periods in the geological time scale (youngerNamedAge and olderNamedAge), or by comparison with other geological events or features (relative age).  An event age can represent an instant in time, an interval of time, or any combination of multiple instants or intervals.
+
+Specifications of age in years before present are based on determination of time durations based on interpretation of isotopic analyses of EarthMaterial (some other methods are used for geologically young materials). Ages specified by geological time scales are essentially based on correlation of a geological unit with a standard chronostratigraphic unit that serves as a reference. Relative ages are based on relationships between geological units such as superposition, intruded by, cross-cuts, or “contains inclusions of” (a.k.a, Steno laws).
+
+Defined by INSPIRE 3.0 (p.33) https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_GE_v3.0.pdf
+Definition: An identifiable event during which one or more geological processes act to modify geological entities.
+Description: A GeologicEvent should have a specified geologic age and process, and may have a specified environment.</rdfs:comment>
+        <rdfs:label>Geologic event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature">
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#34
+
+The abstract GeologicFeature class represents a conceptual feature that is hypothesized to exist coherently in the world.  It corresponds with a “legend item” from a traditional geologic map and its instance acts as the “description package”.  The description package is classified according to its intended purpose as a typicalNorm, definingNorm or instance.  GeologicFeature can be used outside the context of a map (it can lack a MappedFeature), for example when describing typical norms (describing expected property from a feature) or defining norms (describing properties required from a feature to be classifying in a group, such as given geologic unit).  A GeologicFeature appearing on a map is considered as an “instance”.</rdfs:comment>
+        <rdfs:label>Geologic feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicUnit"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeoSciML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#82
+
+Geologic Structure is a package of classes to describe GeologicStructures which are a configuration of matter in the Earth based on describable inhomogeneity, pattern, or fracture in an EarthMaterial.  The scale of geological structures ranges from microscopic (micron-scale) to megascopic (km-scale). Examples of such inhomogeneities include fractures, mineral grain boundaries, and boundaries between parts of the rock with different particle geometry (texture) or composition.
+GeologicStructure is grounded in relationships between parts of a rock or rock body. As used here, it includes sedimentary structures. The identity of a GeologicStructure is independent of the material that is the substrate for the structure although there are almost always strong dependencies between the nature of the earth material substrate and the kinds of geological structure that may be present.
+A disaggregated heap of particles does not have structure, and can only be described in terms of the mineralogy and geometrical character of the constituent particles.  Geologic structures are more likely to be found in, and are more persistent in, consolidated materials than in unconsolidated materials. Properties like “clast-supported”, “matrix-supported”, and “graded bed” that do not involve orientation are considered kinds of GeologicStructure because they depend on the configuration of parts of a rock body.
+
+
+EQUIVALENT TO
+
+(UML Context diagram) 
+=
+subCLASS of GeologicFeature 
+
+---AND---
+
+(GSML-INSPIRE) &quot;A configuration of matter in the Earth based on describable inhomogeneity, pattern, or fracture...&quot;
+=
+OPhasGeometricalObject CLASSGeometricalObject
+
+---AND---
+
+(GSML-INSPIRE) &quot;... in an EarthMaterial&quot;
+(GSML) &quot;The general GeologicRelation is used to associate penetrative GeologicStructures with GeologicUnits.&quot;
+=
+OPhasGeologicUnit CLASSGeologicUnit</rdfs:comment>
+        <rdfs:comment>Subclasses of GeologicStructure represented in GeoSciML 4.1 Context Diagram
+http://geosciml.org/doc/geosciml/4.1/documentation/html/EARoot/EA1/EA1/EA3/EA4/EA184.png
+
+However, some changes have been made to the organization of the subclasses proposed by the standard (https://www.di.unito.it/wikigeo/index.php?title=GeologicStructure)</rdfs:comment>
+        <rdfs:label>Geologic structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasComposition"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasMaterial"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasHierarchyLink"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasTargetUnit"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#48
+Conceptually, a GeologicUnit may represent a body of material in the Earth whose complete and precise extent is inferred to exist (e.g., North American Data Model GeologicUnit [12], Stratigraphic unit in the sense of NACSN [14], or International Stratigraphic Code [9]), or a classifier used to characterize parts of the Earth (e.g. lithologic map unit like ‘granitic rock’ or ‘alluvial deposit’, surficial units like ‘till’ or ‘old alluvium’). It includes both formal units (i.e. formally adopted and named in an official lexicon) and informal units (i.e. named but not promoted to a lexicon) and unnamed units (i.e., recognizable, described and delineable in the field but not otherwise formalised).  In simpler terms, a geologic unit is a package of earth material (generally rock).
+
+References:
+9.     ISSC (International Subcommission on Stratigraphic Classification) of IUGS International Commission on Stratigraphy, International stratigraphic guide (2d edition, Amos Salvador, ed.): Trondheim, Norway, International Union of Geological Sciences, and Boulder, Colorado, Geological Society of America (1994)
+12.  NADM: NADM Conceptual Model 1.0, A Conceptual Model for Geologic Map Information, co published as U.S. Geological Survey Open-File Report 2004-1334 and Geological Survey of Canada Open File 4737. (2004) &lt;http://pubs.usgs.gov/of/2004/1334/2004-1334.pdf&gt;
+14.  North American Commission of Stratigraphic Nomenclature (NACSN), North American Stratigraphic Code: American Association of Petroleum Geologists Bulletin, 89, 11, 1547-1591 (2005)
+
+Defined by INSPIRE 3.0 (p.35) https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_GE_v3.0.pdf
+GeologicUnit represents a body of material in the Earth whose complete and precise extent is inferred
+to exist. Spatial properties are only available through association with a MappedFeature.
+The composition association from GeologicUnit to CompositionPart allows the lithological description
+of the Geologic Unit. The composition of a Geologic Unit can be made up of several Composition
+Parts, for example where there are lithologically distinct components interbedded.
+
+EQUIVALENT TO
+
+The axiom is inspired by the UML schema proposed by GeoScienceML 4.1 http://geosciml.org/doc/geosciml/4.1/documentation/html/EARoot/EA1/EA1/EA3/EA1/EA110.png</rdfs:comment>
+        <rdfs:comment>GeologicUnit subclasses by GeologicUnitType CGI Vocabulary
+http://resource.geosciml.org/classifier/cgi/geologicunittype</rdfs:comment>
+        <rdfs:label>Geologic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasLandformShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#Shape"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#97
+A geomorphologic feature is a kind of GeologicFeature describing the shape and nature of the Earth’s land surface. These landforms may be created by natural Earth processes (e.g., river channel, beach, moraine or mountain) or through human (anthropogenic) activity (e.g., dredged channel, reclaimed land, mine waste dumps).  In GeoSciML, the geomorphologic feature is modelled as a feature related (through unitDescription property) to a GeologicUnit that composes the form.</rdfs:comment>
+        <rdfs:label>Geomorphologic feature</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

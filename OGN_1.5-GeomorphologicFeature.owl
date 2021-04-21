@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.purl.org/ontogeonous/geomorphologicFeature#"
+     xml:base="http://www.purl.org/ontogeonous/geomorphologicFeature"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFan -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFan">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFluvialFeature"/>
+        <rdfs:label>Alluvial fan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFluvialFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFluvialFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Alluvial fluvial feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#AnthropogenicGeomorphologicFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#AnthropogenicGeomorphologicFeature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeoSciML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#103 
+
+An anthropogenic geomorphologic feature is a geomorphologic feature (i.e., landform) which has been created by human activity.  For example, a dredged channel, midden, open pit or reclaimed land.</rdfs:comment>
+        <rdfs:label>Anthropogenic geomorphologic feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Arete -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Arete">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Arete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#ConstructionalFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#ConstructionalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Constructional feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#DepositionalTerrace -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#DepositionalTerrace">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#FloodPlain"/>
+        <rdfs:label>Depositional terrace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Drumlin -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Drumlin">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Drumlin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#ErodedFanRemnant -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#ErodedFanRemnant">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#FanRemnant"/>
+        <rdfs:label>Eroded fan remnant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#ErosionalFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#ErosionalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Erosional feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Erratic -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Erratic">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Erratic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#FanRemnant -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#FanRemnant">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Fan remnant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#FloodPlain -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#FloodPlain">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFluvialFeature"/>
+        <rdfs:label>Flood plain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialCirque -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialCirque">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Glacial cirque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSL -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSL">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Glacial feature SL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSL"/>
+        <rdfs:label>Glacial feature SS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialTerrace -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialTerrace">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Glacial terrace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioFluvialFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioFluvialFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSL"/>
+        <rdfs:label>Glacio fluvial feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioLacustrineFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioLacustrineFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSL"/>
+        <rdfs:label>Glacio lacustrine feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioMarineFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioMarineFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSL"/>
+        <rdfs:label>Glacio marine feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Horn -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Horn">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Horn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalFrontalMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalFrontalMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalMoraine"/>
+        <rdfs:label>Ice marginal frontal moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalLateralMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalLateralMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalMoraine"/>
+        <rdfs:label>Ice marginal lateral moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#Moraine"/>
+        <rdfs:label>Ice marginal moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#LandSlideFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#LandSlideFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#SlopeGravitationalFeature"/>
+        <rdfs:label>Land slide feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Moraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Moraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeoSciML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#100
+
+A natural geomorphologic feature is a geomorphologic feature (i.e., landform) that has been created by natural Earth processes. For example, river channel, beach ridge, caldera, canyon, moraine or mud flat.</rdfs:comment>
+        <rdfs:label>Natural geomorphologic feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Nunatak -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Nunatak">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Nunatak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#OutwashFan -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#OutwashFan">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacioFluvialFeature"/>
+        <rdfs:label>Outwash fan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#RecessionalMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#RecessionalMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalMoraine"/>
+        <rdfs:label>Recessional moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#RiverTerrace -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#RiverTerrace">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#AlluvialFluvialFeature"/>
+        <rdfs:label>River terrace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#RocheMoutonnes -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#RocheMoutonnes">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Roche moutonnes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#Scarp -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#Scarp">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Scarp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#SlopeGravitationalFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#SlopeGravitationalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#NaturalGeomorphologicFeature"/>
+        <rdfs:label>Slope gravitational feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#SubglacialMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#SubglacialMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#Moraine"/>
+        <rdfs:label>Subglacial moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#SupraglacialMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#SupraglacialMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#Moraine"/>
+        <rdfs:label>Supraglacial moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#TerminalMoraine -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#TerminalMoraine">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#IceMarginalMoraine"/>
+        <rdfs:label>Terminal moraine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#U-shapedValley -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#U-shapedValley">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>U-shaped valley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature#WaveOgive -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature#WaveOgive">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature#GlacialFeatureSS"/>
+        <rdfs:label>Wave ogive</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

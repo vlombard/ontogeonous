@@ -1,0 +1,2535 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ontogeonous/ontogeonous#"
+     xml:base="http://purl.org/ontogeonous/ontogeonous"
+     xmlns:geologicStructure="http://purl.org/ontogeonous/geologicStructure#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ogeo="http://purl.org/ontogeonous/ontogeonous#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/geologic_structure">
+        <rdfs:comment>GUIDE FOR A COMPLETE USE OF THE PRESENT ONTOLOGY
+For a complete reading of the ontology, it is useful to import the following ontologies:
+-OGN_0.1-ExternalVacabularies http://www.purl.org/ontogeonous/externalVocabularies
+-OGN_0.2-Properties http://www.purl.org/ontogeonous/properties
+
+The root class of the present ontology (GeologicStructure) is described in the ontology
+-OGN_1-GeologicFeature http://www.purl.org/ontogeonous</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#bounds -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#bounds">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasLithology -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasLithology"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isRelatedToEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isRelatedToEvent"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/deformation -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/deformation"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/deposition -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/lithology/igneous_material -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/lithology/igneous_material"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/GeometricalObject -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/Line -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/Line"/>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/Plane -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/Plane"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#AngularUnconformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#AngularUnconformableContact">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+        <rdfs:label>Angular unconformable contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#AnticlineFold -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#AnticlineFold">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:hasValue>Anticline</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/FoldProfileTypeValue/anticline
+A fold, general convex upward, whose core contains the stratigraphically older rocks.
+
+EQUIVALENT TO
+
+INSPIRE: &quot;A fold&quot;
+=
+subCLASS Fold (GSML) 
+
+---AND---
+
+INS: &quot;general convex upward, whose core contains the stratigraphically older rocks&quot;
+=
+DPhasFoldProfile VALUEAnticline</rdfs:comment>
+        <rdfs:label>Anticline fold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#AntiformFold -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#AntiformFold">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:hasValue>Antiform</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/FoldProfileTypeValue/antiform
+Any convex-upward, concave downward fold.
+
+EQUIVALENT TO
+
+INSPIRE: &quot;fold&quot;
+=
+subCLASS Fold (GSML) 
+
+---AND---
+
+INS: &quot;Any convex-upward, concave downward&quot;
+=
+DPhasFoldProfile VALUEAntiform</rdfs:comment>
+        <rdfs:label>Antiform fold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#BeddingFabric -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#BeddingFabric">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#PrimaryFoliation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FoliationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric
+
+Fabric defined by textural or mineralogic variations in sediment produced by depositional processes. May be manifested by lamination structure within the sediment, or by layering in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history.
+
+EQUIVALENT TO 
+
+CGI: &quot;Fabric defined by textural or mineralogic variations in sediment&quot;
+=
+come tradurre? ha senso tradurre?
+
+---AND---
+
+CGI: &quot;produced by depositional processes&quot;
+=
+OPisCreatedByProcess CLASSDeposition
+
+---
+
+CGI: &quot;May be manifested by lamination structure within the sediment, or by layering in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history.&quot;
+=
+does not indicate any constraint; OMITTED</rdfs:comment>
+        <rdfs:label>Bedding fabric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Cleavage -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Cleavage">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#TectonicFoliation"/>
+        <rdfs:comment>Definition by FoliationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage
+
+A tectonic foliation in a rock characterized by a tendency for the rock to split along a regular set of parallel or sub-parallel closely spaced surfaces. Cleavage is a more general term than schistosity because schistosity need not be present in order for a rock to display cleavage. Cleavage domains or parting surfaces are not spaced more than 5 cm apart on average (Borradaille et al., 1982)</rdfs:comment>
+        <rdfs:label>Cleavage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ConformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ConformableContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DepositionalContact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/conformable_contact
+A contact separating two geological units in which the layers are formed one above the other in order by regular, uninterrupted deposition under the same general conditions.
+
+EQUIVALENT TO
+
+CGI: Broader: DepositionalContact	
+=
+subCLASS DepositionalContact 
+
+---AND---
+
+CGI: &quot;in order by regular, uninterrupted deposition under the same general conditions&quot;
+=
+DPhasHiatusInDeposition VALUEfalse</rdfs:comment>
+        <rdfs:label>Conformable contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Contact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Contact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#bounds"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Contact subclasses by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype</rdfs:comment>
+        <rdfs:comment>We consider Contact as CGI - GeoSciML LithogeneticContact (non faulted).
+
+Reference: ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/lithogenetic_contact
+
+A non-faulted contact separating bodies of material in the earth that have different lithologic character or geologic history.
+
+EQUIVALENT TO
+
+&quot;Geologic Structure ...&quot;
+=
+subCLASS GeologicStructure (GSML / INS)
+
+--AND--
+
+CGI: &quot;...non-faulted Contact…”
+=
+DPhasMovement VALUEfalse 
+
+--AND--
+
+CGI: &quot;… separating bodies of material in the earth that have different lithologic character or geologic history”
+=
+OPbounds min 2 CLASSGeologicUnit
+
+--AND--
+
+CGI (Contact): &quot;A surface that separates geologic units&quot;	
+=
+OPhasGeometricalObject CLASS2DSurface</rdfs:comment>
+        <rdfs:label>Contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#DepositionalContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DepositionalContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Contact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/depositional_contact
+Lithogenetic contact at which a sedimentary or volcanic rock has been deposited on (or against) another rock body. The relationship between the older underlying rocks and younger overlying rocks is unknown or not specfied.
+
+EQUIVALENT TO 
+
+CGI: &quot;Lithogenetic contact&quot;
+=
+subCLASS LithogeneticContact
+
+---AND---
+
+CGI: &quot;at which a sedimentary or volcanic rock has been deposited on (or against) another rock body.&quot;
+=
+OPisCreatedByProcess CLASSDeposition
+
+---
+
+CGI: &quot;The relationship between the older underlying rocks and younger overlying rocks is unknown or not specfied.&quot;
+=
+Not restrictive, omitted</rdfs:comment>
+        <rdfs:label>Depositional contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#DetachmentFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DetachmentFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleNormalFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault
+A regional-scale, large displacement, low-angle normal fault.
+
+EQUIVALENT TO
+
+CGI: &quot;low-angle normal fault&quot;	
+=
+subCLASS LowAngleNormalFault
+
+---AND---
+
+CGI: &quot;A regional-scale, large displacement,&quot;
+=
+OPhasFaultMovementSense VALUEdetachment</rdfs:comment>
+        <rdfs:label>Detachment fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#DextralStrikeSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DextralStrikeSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault
+Fault with right-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and right-lateral displacement over more than half the mapped trace of the fault.
+
+EQUIVALENT TO
+
+CGI: &quot;Fault&quot;	
+=
+subCLASS Fault
+
+---AND---
+
+CGI: &quot; with right-lateral&quot;	
+=
+OPhasFaultMovementSense VALUEdextral
+
+---AND---
+
+CGI: &quot;strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and right-lateral displacement over more than half the mapped trace of the fault.&quot;
+=
+subCLASS StrikeSlipFault
+(makes implicit the first condition, subclass of Fault)</rdfs:comment>
+        <rdfs:label>Dextral strike slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#DipSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DipSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>New class defined, contrapposed to the StrikeSlipFault class to group the faults that present a movement parallel to their dip.
+Presented in WikiGeo web pages https://www.di.unito.it/wikigeo/index.php?title=DipSlipFault
+
+Definition by Price &amp; cosgrove https://scholar.google.it/scholar?q=price+and+cosgrove+analysis+of+geological+structures&amp;hl=it&amp;as_sdt=0&amp;as_vis=1&amp;oi=scholart
+If the trace was aligned approximately perpendicular to the strike it was termed a Dip-Fault
+
+The axiom is based on the value &quot;DipSlip&quot; present in the FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip
+&quot;DipSlip&quot;: The net slip of the fault lies in the dip direction of the fault.</rdfs:comment>
+        <rdfs:label>Dip slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#DisconformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DisconformableContact">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+        <rdfs:label>Disconformable contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ExtractionFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ExtractionFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault
+A fault whose two sides have approached each other substantially in the direction perpendicular to the fault.
+
+EQUIVALENT TO 
+
+CGI: &quot;A Fault&quot;
+=
+subCLASS Fault
+
+---AND---
+
+CGI: &quot;whose two sides have approached each other substantially in the direction perpendicular to the fault&quot;
+=
+OP hasFaultMovementType VALUEExtraction</rdfs:comment>
+        <rdfs:label>Extraction fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Fold -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#87
+A fold is formed by one or more systematically curved layers, surfaces, or lines in a rock body. A fold denotes a structure formed by the deformation of a geologic structure, such as a contact which the original undeformed geometry is presumed, to form a structure that may be described by the translation of an abstract line (the fold axis) parallel to itself along some curvilinear path (the fold profile). Folds have a hinge zone (zone of maximum curvature along the surface) and limbs (parts of the deformed surface not in the hinge zone).  Folds are described by an axial surface, hinge line, profile geometry, the solid angle between the limbs, and the relationships between adjacent folded surfaces if the folded structure is a Layering fabric. 
+
+EQUIVALENT TO
+
+INSPIRE: Subtype of GeologicStructure
+UML GeologicStructure
+=
+subCLASS GeologicStructure (GSML -INS) 
+
+---AND---
+
+GSML/INS: &quot;One or more systematically curved layers, surfaces, or lines in a rock body...&quot;
+=
+OP hasGeometricalObject some CLASS CurvedSurface
+
+---
+
+GSML/INS: &quot;Fold denotes a structure formed by the deformation of a GeologicStructure to form a structure that may be described by the translation of an abstract line (the fold axis) parallel to itself along some curvilinear path (the fold profile). Folds have a hinge zone (zone of maximum curvature along the surface) and limbs (parts of the deformed surface not in the hinge zone). Folds are described by an axial surface, hinge line , profile geometry, the solid angle between the limbs, and the relationships between adjacent folded surfaces if the folded structure is a Layering fabric (similar, parallel).&quot;
+=
+this part can be omitted as it&apos;s not important to discriminate folds from other geologicStructure</rdfs:comment>
+        <rdfs:comment>Fold subclasses are defined by their profile, defined by INSPIRE http://inspire.ec.europa.eu/codelist/FoldProfileTypeValue</rdfs:comment>
+        <rdfs:label>Fold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Foliation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Foliation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeoSciML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#90
+A foliation is a planar arrangement of textural or structural features in any type of rock.  It includes any of a wide variety of penetrative planar geological structures that may be present in a rock. 
+
+Definition by Davis and Reynolds (1996):
+“Foliation is any mesoscopically penetrative parallel alignment of planar fabric element in a rock”
+
+Definition by FoliationType CGI Vocabulary
+http://resource.geosciml.org/classifier/cgi/foliationtype/foliation
+Fabric defined by the planar arrangement of textural or structural features (fabric elements).
+
+EQUIVALENT TO
+
+INSPIRE: Subtype of GeologicStructure
+UML GeologicStructure	
+=
+subCLASS GeologicStructure 
+
+---AND---
+
+GSML: &quot; A foliation is a planar arrangement of textural or structural features…” 	
+Davis &amp; Reynolds: &quot;is any mesoscopically penetrative parallel alignment of planar fabric element&quot;
+=
+OP hasGeometricalObject CLASS Plane
+
+---AND---
+
+GSML: “…in any type of rock&quot;	
+Davis &amp; Reynolds: &quot;in a rock&quot;
+=
+OPisWithin CLASSGeologicUnit
+
+---
+
+GSML: &quot; It includes any of a wide variety of penetrative planar geological structures that may be present in a rock.”
+=== 
+implicit above</rdfs:comment>
+        <rdfs:comment>Foliation subclasses by FoliationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/foliationtype</rdfs:comment>
+        <rdfs:label>Foliation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Fracture -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fracture">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+                                <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+                                <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by Davis and Reynolds (1996) 
+[Fractures]…are formed in the same way that faults are formed: there is shear parallel to the fracture surface. Yet they are not called faults because offset by shear is generally not visible at the scale of outcrop or hand specimen. [...] Joints are reasonably continuous and through-going planar fractures, commonly on the scale of centimeters to tens or hundreds of meters in length, along which there has been imperceptible “pull-apart” movement more or less perpendicular to the fracture surface. Joints are product of brittle failure.
+
+EQUIVALENT TO
+
+UML GeologicStructureDetail
+===
+subCLASS GeologicStructure
+
+---AND---
+
+(Davis &amp; Reynolds) “[Fractures]…are formed in the same way that faults are formed: there is shear parallel to the fracture surface.…”
+=
+OPhasGeometricalObject CLASS Plane
+OPhasDeformationStyle IND(Brittle OR Mixed)
+
+---AND---
+
+(Davis &amp; Reynolds): “…Yet they are not called faults because offset by shear is generally not visible at the scale of outcrop or hand specimen.”
+=
+DPhasMovement VALUEfalse</rdfs:comment>
+        <rdfs:label>Fracture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>New class defined, contrapposed to the NonDirectionalStrucutre class;
+presented in WikiGeo web pages https://www.di.unito.it/wikigeo/index.php?title=GeologicStructureSS
+
+The axiom derives from the contrapposition with the NonDirectionalStructure class</rdfs:comment>
+        <rdfs:label>Geologic structure SS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault
+Fault that dips at least 45 degrees over more than half of its recognized extent, for which slip or separation is not explicitly specified.
+
+EQUIVALENT TO 
+
+CGI: &quot;Fault&quot;
+=
+subCLASS Fault
+
+---AND---
+
+CGI: &quot;that dips at least 45 degrees over more than half of its recognized extent&quot;
+=
+DP hasDip VALUE (&gt;=45)</rdfs:comment>
+        <rdfs:label>High angle fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#HighAngleNormalFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleNormalFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NormalFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault
+Fault that dips at least 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks.
+
+EQUIVALENT TO 
+
+CGI: &quot;Fault that dips at least 45 degrees over more than half of the recognized extent of the fault&quot;
+=
+subCLASS HighAngleFault
+
+---AND---
+
+CGI: &quot;with the hanging wall displaced from a structurally higher position relative to footwall rocks&quot;
+=
+subCLASS NormalFault</rdfs:comment>
+        <rdfs:label>High angle normal fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ObliqueSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>High angle oblique slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#HighAngleReverseFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleReverseFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ReverseFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse_fault
+Reverse fault that dips at least 45 degrees over more than half of its recognized extent, for which slip or separation is not explicitly specified.
+
+EQUIVALENT TO 
+
+CGI: &quot;Fault that dips at least 45 degrees over more than half of the recognized extent of the fault&quot;
+=
+subCLASS HighAngleFault
+
+---AND---
+
+CGI: &quot;with the hanging wall displaced from a structurally higher position relative to footwall rocks&quot;
+=
+subCLASS ReverseFault</rdfs:comment>
+        <rdfs:label>High angle reverse fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#HorizontalFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HorizontalFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault
+Fault that dips less than 10 degrees over more than half the recognized extent of the fault
+
+EQUIVALENT TO 
+
+CGI: &quot;Fault&quot; 
+=
+subCLASS Fault
+
+---AND---
+
+GSML: &quot;that dips less than 10 degrees over more than half the recognized extent of the fault.&quot;
+=
+DP hasDip VALUE[&lt;10]
+
+--
+
+As in the FaultMovementType CGI Vocabulary there is the term &quot;horizontal&quot;, it is added in the axiom as an alternative condition</rdfs:comment>
+        <rdfs:label>Horizontal fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#LeftNormalFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LeftNormalFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault
+High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault.
+
+EQUIVALENT TO
+
+CGI: &quot;High angle fault&quot;
+=	
+subCLASS HighAngleFault
+(why it has to be so? We neglect this in the axiom)
+
+---AND---
+
+CGI: &quot;with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace&quot;	
+=subCLASS ObliqueSlipFault
+
+---AND---
+
+CGI: &quot;with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementSense VALUEnormal_sinistral</rdfs:comment>
+        <rdfs:label>Left normal fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#LeftReverseFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LeftReverseFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/left_reverse_fault
+High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with left-lateral strike-parallel component and reverse dip-parallel component over at least half the mapped trace of the fault.
+
+EQUIVALENT TO
+
+CGI: &quot;High angle fault &quot;	
+=
+subCLASS HighAngleFault
+(why it has to be so? We neglect this in the axiom)
+
+---AND---
+
+CGI: &quot;with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace&quot;	
+=
+subCLASS ObliqueSlipFault
+
+---AND---
+
+CGI: &quot;with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementSense VALUEreverse_sinistral</rdfs:comment>
+        <rdfs:label>Left reverse fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Lineation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Lineation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Line"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by LineationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/lineationtype/lineation
+Nongenetic term for a penetrative linear structure.
+
+Definition by Hobbs, Means, Williams (1976) - An outline of structural geology (pag 267)
+The word lineation is used to describe any linear structure that occurs repetitively in a sample of rock. […] Lineation may be defined in a more precise way an any linear fabric element; it may be a primay igenous or sedimentary structure or a secondary structure realted to deformation.
+
+Definition by Davis and Reynolds (1996) - Structural Geology of Rocks and Regions (2nd Ed.) (pag 463)
+Lineation is the subparallel to parallel alignement of elongate, linear fabric elements in a rock body, commonly penetrative at the outcop and/or hand specimen scale of observation, and commonly at the microscopic scale as well.
+
+EQUIVALENT TO
+
+UML GeologicStructureDetail
+=
+subCLASS GeologicStructure
+
+---AND---
+
+CGI: &quot;Nongenetic term for a penetrative linear structure&quot;
+Hobbs et al.: “The word lineation is used to describe any linear structure…”
+Davis &amp; Reynolds: “Lineation is the subparallel to parallel alignement of elongate, linear fabric elements…”
+=
+OPhasGeometricalObject CLASSLine
+
+---AND---
+
+Hobbs et al.: “…in a sample of rock &quot;
+Davis &amp; Reynolds: “…in a rock body”
+=
+OPisWithin CLASSGeologicUnit</rdfs:comment>
+        <rdfs:comment>Lineation subclasses by LineationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/lineationtype</rdfs:comment>
+        <rdfs:label>Lineation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault
+Fault that dips less than 45 degrees over more than half of the recognized extent of the fault.
+
+EQUIVALENT TO
+
+CGI: &quot;Fault&quot;	
+=
+subCLASS Fault
+
+---AND---
+
+CGI: &quot;that dips less than 45 degrees over more than half of the recognized extent of the fault&quot;
+=
+DPhasDip VALUE[&lt; 45]</rdfs:comment>
+        <rdfs:label>Low angle fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#LowAngleNormalFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleNormalFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NormalFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault
+fault that dips less than 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks.
+
+EQUIVALENT TO 
+
+CGI: &quot;Fault that dips less than 45 degrees over more than half of the recognized extent of the fault&quot;	
+=
+subCLASS LowAngleFault
+
+---AND---
+
+CGI: &quot; with the hanging wall displaced from a structurally higher position relative to footwall rocks&quot;
+=
+subCLASS NormalFault</rdfs:comment>
+        <rdfs:label>Low angle normal fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#LowAngleObliqueSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleObliqueSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ObliqueSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Low angle oblique slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#MetamorphicContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#MetamorphicContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Contact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#bounds"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/metamorphic_contact
+Lithogenetic contact separating rocks that have different lithologic properties related to metamorphism, metasomatism, alteration, or mineralization. Generally separates metamorphic rock bodies, but may separate metamorphosed (broadly speaking) and non-metamorphosed rock.
+
+EQUIVALENT TO 
+
+CGI: &quot;Lithogenetic contact&quot;
+=
+subCLASS LithogeneticContact
+
+---AND---
+
+CGI: &quot;separating rocks that have different lithologic properties related to metamorphism, metasomatism, alteration, or mineralization.&quot;
+=
+OPbounds CLASSGeologicUnit DPisMetamorphic VALUEtrue
+
+---
+
+CGI: &quot;Generally separates metamorphic rock bodies, but may separate metamorphosed (broadly speaking) and non-metamorphosed rock.&quot;
+=
+Not restrictive, omitted</rdfs:comment>
+        <rdfs:label>Metamorphic contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#MetamorphicFaciesContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#MetamorphicFaciesContact">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#MetamorphicContact"/>
+        <rdfs:comment>Definition by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/metamorphic_facies_contact
+A metamorphic contact separating rocks that have undergone metamorphism of a particular facies from those that have undergone metamorphism of another facies.</rdfs:comment>
+        <rdfs:label>Metamorphic facies contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#MixedExtractionFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#MixedExtractionFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ExtractionFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault
+An extraction fault with some displacement within the fault plane.
+
+EQUIVALENT TO
+
+CGI: An extraction fault	
+=
+subCLASS ExtractionFault (CGI)
+
+---AND---
+
+GSML-CGI: &quot;with some displacement within the fault plane&quot;
+OPhasFaultMovementType VALUEmixed_extraction</rdfs:comment>
+        <rdfs:label>Mixed extraction fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#NonConformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NonConformableContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#bounds"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasLithology"/>
+                                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/lithology/igneous_material"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic"/>
+                                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#bounds"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/nonconformable_contact
+An unconformable contact between an underlying, older nonstratified geological unit (usually intrusive igneous rocks or metamorphics) and an overlying, younger stratified geological unit.
+
+EQUIVALENT TO
+
+GSML/INS: &quot;An unconformable contact...&quot;
+=
+subCLASS UnconformableContact 
+
+---AND---
+
+CGI: &quot;between an underlying, older nonstratified geological unit (usually intrusive igneous rocks or metamorphics)”
+=
+OPbounds CLASSGeologicUnit OPhasLithology CLASSIgneousMaterial  
+--OR--
+OPbounds CLASSGeologicUnit DPisMetamorphic VALUETrue
+
+---AND---
+
+CGI: &quot;and an overlying, younger stratified geological unit.”
+=
+OPbounds CLASSGeologicUnit OPisCreatedByProcess CLASSSedimentaryProcess</rdfs:comment>
+        <rdfs:label>Non conformable contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#NonDirectionalStructure -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NonDirectionalStructure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>As a class, it is present in the Context diagram http://geosciml.org/doc/geosciml/4.1/documentation/html/EARoot/EA1/EA1/EA3/EA4/EA184.png
+Defined by GeoSciML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#247 
+&quot;Refers to a vocabulary of terms describing types of non-directional structures (e.g., miarolitic cavity, flame structure, load cast, shatter cone, trace fossil, fossil mold, etc.)&quot;
+
+The axiom does not derive from a direct translation of the defintion, as it is not the definition of the class but of the referred Vocabulary</rdfs:comment>
+        <rdfs:label>Non directional structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#NormalFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NormalFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DipSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault
+Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector over more than half recognized extent of the fault, and for which the fault dips consistently in the same direction, and for which the hanging wall has been displaced down relative to the footwall.
+
+EQUIVALENT TO
+
+CGI: &quot;Fault&quot;
+=
+subCLASS Fault 
+
+---AND---
+
+CGI: &quot;with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector over more than half recognized extent of the fault, and for which the fault dips consistently in the same direction, and for which the hanging wall has been displaced down relative to the footwall.&quot;
+=
+OPhasFaultMovementSense VALUENormal</rdfs:comment>
+        <rdfs:label>Normal fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ObliqueSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ObliqueSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault
+Fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace of the fault.
+
+EQUIVALENT TO 
+
+CGI: Fault 	
+=
+subCLASS Fault (CGI)
+
+---AND-
+
+CGI: &quot;with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementType VALUEObliqueSlip</rdfs:comment>
+        <rdfs:label>Oblique slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ParaconformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ParaconformableContact">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+        <rdfs:label>Paraconformable contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#PrimaryFoliation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#PrimaryFoliation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Foliation"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FoliationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/foliationtype/primary_foliation
+Foliation formed during original process of deposition or crystallization of an igneous or sedimentary material.
+
+EQUIVALENT TO
+
+CGI: &quot;Foliation&quot;
+=
+subCLASS Foliation
+
+---AND---
+
+CGI: &quot;formed during original process of deposition (--) of a sedimentary material&quot;
+OPisCreatedByProcess CLASSDeposition
+-OR-
+CGI: &quot;Or crystallization of an igneous material&quot;
+=
+OPisCreatedByProcess CLASSMagmaticCrystallisation</rdfs:comment>
+        <rdfs:label>Primary foliation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#PureExtractionFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#PureExtractionFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ExtractionFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault
+An extraction fault with no discernible displacement within the fault plane.
+
+EQUIVALENT TO
+
+CGI: An extraction fault	
+=
+subCLASS ExtractionFault (CGI)
+
+---AND---
+
+GSML-CGI: &quot;with no discernible displacement within the fault plane&quot;
+OPhasFaultMovementType VALUEpure_extraction</rdfs:comment>
+        <rdfs:label>Pure extraction fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ReverseFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ReverseFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DipSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault
+Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault.
+
+EQUIVALENT TO 
+
+CGI: A fault 	
+=
+subCLASS Fault (CGI)
+
+---AND---
+
+CGI: &quot;with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementSense VALUEReverse</rdfs:comment>
+        <rdfs:label>Reverse fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#RightNormalFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#RightNormalFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault
+High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with right-lateral strike-parallel component and normal dip-parallel component of slip over at least half the mapped trace of the fault
+
+EQUIVALENT TO
+
+CGI: &quot;High angle fault &quot;	
+=
+subCLASS HighAngleFault
+(why it has to be so? We neglect this in the axiom)
+
+---AND---
+
+CGI: &quot;with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace&quot;	
+=
+subCLASS ObliqueSlipFault
+
+---AND---
+
+CGI: &quot;with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementSense VALUEnormal_dextral</rdfs:comment>
+        <rdfs:label>Right normal fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#RightReverseFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#RightReverseFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/right_reverse_fault
+High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with a right-lateral strike-parallel component and reverse dip-parallel component of slip over at least half the mapped trace of the fault.
+
+EQUIVALENT TO
+
+CGI: &quot;High angle fault &quot;	
+=
+subCLASS HighAngleFault
+(why it has to be so? We neglect this in the axiom)
+
+---AND---
+
+CGI: &quot;with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace&quot;	
+=
+subCLASS ObliqueSlipFault
+
+---AND---
+
+CGI: &quot;with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementSense VALUEreverse_dextral</rdfs:comment>
+        <rdfs:label>Right reverse fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Schistosity -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Schistosity">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#Cleavage"/>
+        <rdfs:comment>Definition by FoliationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/foliationtype/schistosity
+
+A fabric defined the parallel, planar arrangement of mineral grains having a platy, lamellar, or tabular crystallographic habit that are oriented in a continuous planar or rarely a linear fabric. Schistosity is commonly, but not necessarily, a crystalloblastic foliation. Platy mineral grains typically 1 to 10 mm across (Jackson, 1997), at smaller grain size grades into phyllitic cleavage. Schistosity is typically associated with a continuous cleavage due to the tendency to part parallel to the aligned mineral grains.</rdfs:comment>
+        <rdfs:label>Schistosity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ScissorFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ScissorFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault
+A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with the opposite sense of offset in the opposite direction.
+
+EQUIVALENT TO 
+
+CGI: A fault 	
+=
+subCLASS Fault (CGI)
+
+---AND---
+
+CGI: &quot;on which there is increasing offset or separation along the strike from an initial point of no offset, with the opposite sense of offset in the opposite direction&quot;
+=
+OPhasFaultMovementType VALUEScissor</rdfs:comment>
+        <rdfs:label>Scissor fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Defintion by GeoSciML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#93
+A shear displacement structure includes all brittle to ductile style structures along which displacement has occurred, from a simple, single &apos;planar&apos; brittle or ductile surface to a fault system comprised of 10&apos;s of strands of both brittle and ductile nature. This structure may have some significant thickness (a deformation zone) and have an associated body of deformed rock that may be considered a DeformationUnit
+
+Definition by INSPIRE (D2.8.II.4_v3.0, p. 35) http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_GE_v3.0rc3.pdf
+Subtype of: GeologicStructure
+Definition: Brittle to ductile style structures along which displacement has occurred.
+Description: These range from a simple, single &apos;planar&apos; brittle or ductile surface to a fault system comprised of tens of strands of both brittle and ductile nature.
+
+EQUIVALENT TO
+
+INSPIRE: Subtype of GeologicStructure
+UML GeologicStructure
+=
+subCLASS GeologicStructure
+
+---AND---
+
+INS / GSML: &quot;A shear displacement structure includes all brittle to ductile style structures...&quot;	
+===
+OPhasDeformationStyle CLASS DeformationStyle
+
+---AND---
+
+INS / GSML: &quot;...along which displacement has occurred&quot;
+=
+DPhasMovement VALUE true
+
+---AND---
+
+GSML: &quot;...from a simple, single &apos;planar&apos; brittle or ductile surface to a fault system comprised of 10&apos;s of strands of both brittle and ductile nature. 
+INS: &quot;These range from a simple, single &apos;planar&apos; brittle or ductile surface to a fault system comprised of tens of strands of both brittle and ductile nature&quot;
+=
+OP hasGeometricalObject CLASS Plane
+
+---
+
+GSML: &quot;This structure may have some significant thickness (a deformation zone) and have an associated body of deformed rock that may be considered a DeformationUnit&quot;
+= 
+not necessary to define this class (see DeformationUnit)</rdfs:comment>
+        <rdfs:comment>ShearDisplacementStructure subclasses by FaultType CGI Vocabulary 
+http://resource.geosciml.org/classifier/cgi/faulttype</rdfs:comment>
+        <rdfs:label>Shear Displacement Structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#SinistralStrikeSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#SinistralStrikeSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/sinistral_strike_slip_fault
+Fault with left-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and left-lateral displacement over more than half the mapped trace of the fault.
+
+EQUIVALENT TO
+
+CGI: &quot;Fault&quot;	
+=
+subCLASS Fault
+
+---AND---
+
+CGI: &quot; with left-lateral&quot;	
+=
+OPhasFaultMovementSense VALUEsinistral
+
+---AND---
+
+CGI: &quot;strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and left-lateral displacement over more than half the mapped trace of the fault.&quot;
+=
+subCLASS StrikeSlipFault
+(makes implicit the first condition, subclass of Fault)</rdfs:comment>
+        <rdfs:label>Sinistral strike slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault
+Fault with strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the mapped trace of the fault.
+
+EQUIVALENT TO 
+
+CGI: A fault 	
+=
+subCLASS Fault (CGI)
+
+---AND---
+
+CGI: &quot;with strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the mapped trace of the fault.&quot;
+=
+OPhasFaultMovementType VALUEStrike-Slip</rdfs:comment>
+        <rdfs:label>Strike slip fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#SynclineFold -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#SynclineFold">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:hasValue>Syncline</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/FoldProfileTypeValue/syncline
+A fold of which the core contains the stratigraphically younger rocks; it is generally concave upward
+
+EQUIVALENT TO
+
+INSPIRE: &quot;A fold&quot;
+=
+subCLASS Fold (GSML) 
+
+---AND---
+
+INS: &quot;of which the core contains the stratigraphically younger rocks; it is generally concave upward&quot;
+=
+DPhasFoldProfile VALUESyncline</rdfs:comment>
+        <rdfs:label>Syncline fold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#SynformFold -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#SynformFold">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:hasValue>Synform</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/FoldProfileTypeValue/synform
+Any fold whose limbs close at the bottom
+
+EQUIVALENT TO
+
+INSPIRE: &quot;Any fold&quot;
+=
+subCLASS Fold (GSML) 
+
+---AND---
+
+INS: &quot;whose limbs close at the bottom&quot;
+=
+DPhasFoldProfile VALUESynform</rdfs:comment>
+        <rdfs:label>Synform fold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#TectonicFoliation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#TectonicFoliation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Foliation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deformation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FoliationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation
+Foliation in a rock body defined by physical components related to deformation subsequent to solidification of the rock.
+
+EQUIVALENT TO 
+
+CGI: &quot;Foliation&quot;
+=
+subCLASS Foliation
+
+---AND---
+
+CGI: &quot;in a rock body defined by physical components related to deformation subsequent to solidification of the rock.&quot;
+=
+OPisCreatedByProcess CLASSDeformation</rdfs:comment>
+        <rdfs:label>Tectonic foliation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#TectonicLineation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#TectonicLineation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Lineation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by LineationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation
+Penetrative linear structure in a rock body defined by fabric elements that are the product of tectonic processes. Linear is used in the sense that the orientation of the structure can be represented as a line in some sufficiently small neighborhood of any point in the material containig the fabric. Penetrative denotes that the fabric elements defining the structure are repeated at distances so small, compared with the scale of the whole…that they can be considered to pervade it uniformly and be present at every point (paraphrase of Turner and Weiss, 1963, p. 21).
+
+EQUIVALENT TO
+
+CGI: &quot;Penetrative linear structure in a rock body&quot;	
+=
+subCLASS Lineation
+
+---AND---
+
+CGI: &quot;defined by fabric elements that are the product of tectonic processes.&quot;
+=
+OPisCreatedByProcess CLASSTectonicProcess</rdfs:comment>
+        <rdfs:label>Tectonic lineation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ThrustFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ThrustFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ReverseFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault
+Fault that dips less than 45 degrees over more than half of the recognized extent of the fault, with a hanging wall displaced from a structurally deeper position relative to footwall rocks.
+
+EQUIVALENT TO 
+
+CGI: &quot;Fault that dips less than 45 degrees over more than half of the recognized extent of the fault,&quot;	
+=
+subCLASS LowAngleFault
+
+---AND---
+
+CGI: &quot; with a hanging wall displaced from a structurally deeper position relative to footwall rocks.&quot;
+=
+subCLASS ReverseFault
+
+--
+
+As in the FaultMovementType CGI Vocabulary there is the term &quot;thrust&quot;, it is added in the axiom as an alternative condition</rdfs:comment>
+        <rdfs:label>Thrust fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#TransformFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#TransformFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform
+A variety of strike-slip fault along which the displacement suddenly stops or changes form, typically associated with mid-ocean ridges.
+
+EQUIVALENT TO
+
+CGI: A variety of strike-slip fault	
+=
+subCLASS StrikeSlipFault (CGI)
+
+---AND---
+
+CGI: &quot; along which the displacement suddenly stops or changes form, typically associated with mid-ocean ridges.&quot;
+=
+OPhasFaultMovementType VALUEtransform</rdfs:comment>
+        <rdfs:label>Transform fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DepositionalContact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by ContactType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/contacttype/unconformable_contact
+A contact separating two geological units in which the younger unit succeeds the older after a substantial hiatus in deposition.
+
+EQUIVALENT TO
+
+CGI: Broader: DepositionalContact	
+=
+subCLASS DepositionalContact 
+
+---AND---
+
+CGI: &quot;separating two geological units in which the younger unit succeeds the older after a substantial hiatus in deposition&quot;
+=
+DPhasHiatusInDeposition VALUEtrue</rdfs:comment>
+        <rdfs:label>Unconformable contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#WrenchFault -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#WrenchFault">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by FaultType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault
+A strike slip fault in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault.
+
+EQUIVALENT TO 
+
+CGI: &quot;A strike slip fault&quot;
+=
+subCLASS StrikeSlipFault
+
+---AND---
+
+CGI: &quot;in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault&quot;
+=
+subCLASS HighAngleFault
+
+---
+
+As in the FaultMovementType CGI Vocabulary there is the term &quot;wrench&quot;, it is added in the axiom as an alternative condition</rdfs:comment>
+        <rdfs:label>Wrench fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
