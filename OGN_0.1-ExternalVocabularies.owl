@@ -1,0 +1,890 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.purl.org/ontogeonous/externalVocabularies#"
+     xml:base="http://www.purl.org/ontogeonous/externalVocabularies"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/external_vocabularies">
+        <rdfs:comment>This ontology contains all the external vocabularies that support the OntoGeonous ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by AlterationType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/alterationtype
+Designed for populating the alteration type property in GeoSciML alterationDescription elements</rdfs:comment>
+        <rdfs:label>Alteration type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary 
+http://resource.geosciml.org/classifier/cgi/eventenvironment
+This scheme specifies concepts used to describe the physical setting within which a GeologicEvent takes place, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. GeologicEnvironment is construed broadly to include physical settings on the Earth surface specified by climate, tectonics, physiography or geography, and settings in the Earth’s interior specified by pressure, temperature, chemical environment, or tectonics. Environments are places. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the eventEnvironment property in GeoSciML GeologicEvent features.</rdfs:comment>
+        <rdfs:label>Event environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geneticcategory -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by GeneticCategory CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geneticcategory
+This scheme specifies categories that summarize the geologic history of an Earth material. (ie, a genetic process classifier term), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Examples include igneous, sedimentary, metamorphic, shock metamorphic, volcanic, pyroclastic. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</rdfs:comment>
+        <rdfs:label>Genetic category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitpartrole -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by GeologicUnitPartRole CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunitpartrole
+This file contains the CGI Geologic Unit Part role vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This vocabulary includes terms to specify the role played by a constituent part of a geologic unit. These terms may be used to populate GeologicUnit.part.GeologicUnitPart.role, and GeologicUnit.composition.compositionPart.role. There are terms in this vocabulary that only apply to one or the other of these properties, but after an effort to create two separate vocabularies, it was decided to use a single vocabulary in order to avoid having the same concept in more than one closely related vocabulary. The duplication of applicable concepts in the two contexts (GeologicUnit.part.GeologicUnitPart.role and GeologicUnit.composition.compositionPart.role) arises because the model allows representation of complex geologic unit descriptions in more than one way. A complex geologic unit like a migmatite complex or a lithologically heterogeneous stratigraphic unit will have many different lithologic components. The simplest approach to representing the lithologic heterogeneity is to report a single GeologicUnit element with compositionParts for each lithologic component; the role on these compositionParts provides information about what kind of parts they are and perhaps something about their relationship, along with the kinds of rock they are composed of. A more complex alternative approach is to represent the various components each as GeologicUnit elements, each with compositionPart links to the rock type(s) composing that part. These component GeologicUnit elements are aggregated by GeologicUnit.part.GeologicUnitPart elements, with roles in the aggregation for each GeologicUnit part. The benefit of the more complex approach is that additional descriptive properties provided by the GeologicUnit content model can be assigned to each part, as well as GeologicRelations between the parts. The role of the compositionParts in these more &apos;disaggregated&apos; GeologicUnit elements would be a simpler &apos;composition&apos; kind of role, because the heterogeneous &apos;whole&apos; unit would be described in GeologicUnitParts that are more lithologically homogeneous. Its a trade-off between simplicity and expressiveness.</rdfs:comment>
+        <rdfs:label>Geologic unit part role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/lithology -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/lithology">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Defintion by SimpleLithology CGI Vocabulary http://resource.geosciml.org/classifier/cgi/lithology
+This scheme specifies the concept space for Simple Lithology concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. This vocabulary is not designed to be a comprehensive list of all lithology terms.</rdfs:comment>
+        <rdfs:label>Lithology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://resource.geosciml.org/classifier/cgi/stratigraphicrank
+This scheme specifies concepts used to categorize the stratigraphic rank of geologic units, as compiled by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</rdfs:comment>
+        <rdfs:label>Stratigraphic rank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/Excavation -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/Excavation">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/excavation
+Removal of material, as in a mining operation</rdfs:comment>
+        <rdfs:label>Excavation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/deformation -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/deformation">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/deformation
+Movement of rock bodies by displacement on fault or shear zones, or change in shape of a body of Earth material.</rdfs:comment>
+        <rdfs:label>Deformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/deposition -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/deposition
+Accumulation of material; the constructive process of accumulation of sedimentary particles, chemical precipitation of mineral matter from solution, or the accumulation of organic material on the death of plants and animals.</rdfs:comment>
+        <rdfs:label>Deposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity
+Processes of human modification of the earth to produce geologic features</rdfs:comment>
+        <rdfs:label>Human activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation
+The process by which matter becomes crystalline, from a gaseous, fluid, or dispersed state</rdfs:comment>
+        <rdfs:label>Magmatic crystallisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition
+A general term for the dislodgement and downslope transport of soil and rock material under the direct application of gravitational body stresses. In contrast to other erosion processes, the debris removed by mass wasting is not carried within, on, or under another medium. The mass properties of the material being transported depend on the interaction of the soil and rock particles and on the moisture content. Mass wasting includes slow displacements, such as creep and solifluction, and rapid movements such as rockfalls, rockslides, and cohesive debris flows (Jackson, 1997, p. 392). Includes both subaerial mass-wasting processes and subaqueous mass-wasting processes.</rdfs:comment>
+        <rdfs:label>Mass wasting deposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition
+Transport and heaping of material, as in a land fill, mine dump, dredging operations
+
+Definition by INSPIRE Data Specification 3 
+http://inspire.ec.europa.eu/codelist/EventProcessValue/materialTransportAndDeposition
+Transport and heaping of material, as in a land fill, mine dump, dredging
+operations</rdfs:comment>
+        <rdfs:label>Material transport and deposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process
+A phenomenon that changes the distribution or physical properties of sediment at or near the earth&apos;s surface</rdfs:comment>
+        <rdfs:label>Sedimentary process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process
+Processes related to the interaction between or deformation of rigid plates forming the crust of the Earth.</rdfs:comment>
+        <rdfs:label>Tectonic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole"/>
+        <rdfs:comment>Definition by GeologicUnitPartRole CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part
+A geologic unit part that occupies a particular stratigraphic position within a geologic unit. Part is a particular body of rock.</rdfs:comment>
+        <rdfs:label>Stratigraphic part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/lithology/igneous_material -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/lithology/igneous_material">
+        <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/classifier/cgi/lithology"/>
+        <rdfs:comment>Defined by SimpleLithology CGI Vocabulary http://resource.geosciml.org/classifier/cgi/lithology/igneous_material
+Earth material formed as a result of igneous processes, eg. intrusion and cooling of magma in the crust, volcanic eruption.</rdfs:comment>
+        <rdfs:label>Igneous material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by EventProcess CGI Vocabulary 
+http://resource.geosciml.org/classifier/cgi/eventprocess
+Vocabulary for populating required geologic process property on a geologic event. Any geologic age assignment is associated with an event, the process property values specifies what happened during that event. This vocabulary is not meant to be an exhaustive compilation of all possible geologic processes, but of those that are most significant in the genesis of geologic structures or geologic units. A geologicProcess is a function, possibly complex, that acts on one geologic entity to produce another geologic entity at a later time. GeologicProcess is time independent; some GeologicProcesses are presently observable in the world or in the laboratory, others can only be inferred from observing the results of the process. Processes take one or more of EarthMaterial, GeologicUnit, or GeologicStructure as input and have one or more of EarthMaterial, GeologicUnit or GeologicStructure as output.</rdfs:comment>
+        <rdfs:label>Event process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by DeformationStyle CGI Vocabulary  http://resource.geosciml.org/classifier/cgi/deformationstyle
+Designed for use in the deformationStyle property in GeoSciML ShearDisplacementStructureDescription elements.</rdfs:comment>
+        <rdfs:label>Deformation style</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+This scheme specifies concepts used to describe the relative direction of movement of bodies of rock across a fault (GeoSciML ShearDisplacementStructure) surface, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Examples include &apos;sinistral&apos;, &apos;dextral&apos;, &apos;normal&apos;, &apos;reverse&apos;. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the movementSense property in GeoSciML DisplacementValue elements.</rdfs:comment>
+        <rdfs:label>Fault movement sense</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+This scheme specifies terms used to define the type of movement (eg dip-slip, strike-slip) for a DisplacementValue on a ShearDisplacementStructure, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</rdfs:comment>
+        <rdfs:label>Fault movement type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/GeometricalObject -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#SWEET_Vocabulary"/>
+        <rdfs:comment>Definition by SWEET Ontology http://cor.esipfed.org/ont?iri=http://sweetontology.net/reprSpaceGeometry/GeometricalObject</rdfs:comment>
+        <rdfs:label>Geometrical object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/GeometricalObject_1D -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject_1D">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+        <rdfs:comment>Definition by SWEET Ontology http://cor.esipfed.org/ont?iri=http://sweetontology.net/reprSpaceGeometry/GeometricalObject_1D</rdfs:comment>
+        <rdfs:label>Geometrical object 1D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/GeometricalObject_2D -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject_2D">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
+        <rdfs:comment>Definition by SWEET Ontology http://cor.esipfed.org/ont?iri=http://sweetontology.net/reprSpaceGeometry/GeometricalObject_2D</rdfs:comment>
+        <rdfs:label>Geometrical object 2D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/Line -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/Line">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject_1D"/>
+        <rdfs:comment>Definition by SWEET Ontology http://cor.esipfed.org/ont?iri=http://sweetontology.net/reprSpaceGeometry/Line</rdfs:comment>
+        <rdfs:label>Line</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sweetontology.net/reprSpaceGeometry/Plane -->
+
+    <owl:Class rdf:about="http://sweetontology.net/reprSpaceGeometry/Plane">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject_2D"/>
+        <rdfs:comment>Definition by SWEET Ontology
+http://cor.esipfed.org/ont?iri=http://sweetontology.net/reprSpaceGeometry/Plane</rdfs:comment>
+        <rdfs:label>Plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#AlterationDescription -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#AlterationDescription">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#142
+AlterationDescription describes aspects of a geologic unit or earth material that are the result of bulk chemical, mineralogical or physical changes related to change in the physical or chemical environment. It includes weathering, supergene alteration, hydrothermal alteration and metasomatic effects not considered metamorphic.</rdfs:comment>
+        <rdfs:label>Alteration description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CGI_Vocabulary"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#ChronostratigraphicEarthMaterials -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#ChronostratigraphicEarthMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+        <rdfs:label>Chronostratigraphic earth materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#59
+CompositionPart represents the composition of a geologic unit in terms of earth material constituents (CompoundMaterial).  It decomposes the material making of the unit into parts having distinct roles and proportions.</rdfs:comment>
+        <rdfs:label>Composition part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#67
+A CompoundMaterial is an EarthMaterial composed of particles made of EarthMaterials, possibly including other CompoundMaterials.  This class is provided primarily as an extensibility point for related domain models that wish to import and build on GeoSciML, and wish to define material types that are compound but are not rock or rock-like material. In the context of GeoSciML &quot;RockMaterial&quot; should be used to describe units made of rock.</rdfs:comment>
+        <rdfs:label>Compound material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterialDescription -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterialDescription">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#150
+The CompoundMaterialDescription class is a kind of EarthMaterialDescription that provides an extended description of a compound earth material (i.e., rocks and unconsolidated solid earth materials).</rdfs:comment>
+        <rdfs:label>Compound material description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#Fossil -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#Fossil">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+        <rdfs:comment>Fossil</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#55
+GeologicUnitHierarchy associates a GeologicUnit with another GeologicUnit that is a proper part of that unit. Parts may be formal or notional. Formal parts refer to a specific body of rock, as in formal stratigraphic members. Notional parts refer to assemblages of particular EarthMaterials with particular internal structure, which may be repeated in various places within a unit (e.g. ‘turbidite sequence’, ‘point bar assemblage’, ‘leucosome veins’).</rdfs:comment>
+        <rdfs:label>Geologic unit hierarchy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject_2D"/>
+        <rdfs:label>Inflected plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#LandslideMovement -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#LandslideMovement">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+        <rdfs:label>Landslide movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PedologicHorizonType -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PedologicHorizonType">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+        <rdfs:comment>This class should contain a vocabulary for descprition of horizon types in pedology.</rdfs:comment>
+        <rdfs:label>Pedologic horizon type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PhysicalDescription -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalDescription">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#178
+PhysicalDescription is a class that describes the numeric physical properties of a geologic unit, earth material, or geologic structure (e.g., density, porosity, magnetic susceptibility, remanent magnetism). These properties are modelled here as scalar numeric values</rdfs:comment>
+        <rdfs:label>Physical description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoSciencML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#179
+The property propertyName:PhysicalPropertyTerm contains a term from a controlled vocabulary of physical properties of rock materials (e.g., density, porosity, magnetic susceptibility, remnant magnetism, permeability, seismic velocity).</rdfs:comment>
+        <rdfs:label>Physical property term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PolarityChrono -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PolarityChrono">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+        <rdfs:label>Polarity chrono</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#RockMaterial -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#RockMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GSML_Vocabulary"/>
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#68
+RockMaterial is a specialized CompoundMaterial that includes consolidated and unconsolidated materials (such as surficial sediments) as well as mixtures of consolidated and unconsolidated materials.  In GeoSciML Basic, Rock Material is essentially a link to a controlled vocabulary (lithology property) and a color (inherited from EarthMaterial).</rdfs:comment>
+        <rdfs:label>Rock material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#SWEET_Vocabulary -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#SWEET_Vocabulary"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#Shape -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#Shape">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#OTHER_Vocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+        <rdfs:comment>Defined by CGIVocabulary DeformationStyle http://resource.geosciml.org/classifier/cgi/deformationstyle
+
+Deformation in fault zone has been accommodated primarily through fracturing and loss of continuity between adjacent rock bodies.</rdfs:comment>
+        <rdfs:label>Brittle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+        <rdfs:comment>Defined by CGIVocabulary DeformationStyle http://resource.geosciml.org/classifier/cgi/deformationstyle
+
+Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity.</rdfs:comment>
+        <rdfs:label>Ductile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+        <rdfs:comment>Defined by CGIVocabulary DeformationStyle http://resource.geosciml.org/classifier/cgi/deformationstyle
+
+Deformation in fault zone has been accommodated by both fracturing and plastic shape change in rock bodies.</rdfs:comment>
+        <rdfs:label>Mixed Brittle Ductile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+A regional-scale low-angle normal fault.</rdfs:comment>
+        <rdfs:label>Detachment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+Right-lateral separation sense, in plan view, the side opposite the observer appears displaced to the right.</rdfs:comment>
+        <rdfs:label>Dextral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+The hanging wall appears to have moved down relative to the footwall, dip of fault usually 45-90 degrees.</rdfs:comment>
+        <rdfs:label>Normal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+The movement sense includes both normal and dextral components.</rdfs:comment>
+        <rdfs:label>Normal dextral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+The movement sense includes both normal and sinistral components.</rdfs:comment>
+        <rdfs:label>Normal sinistral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+The hanging wall appears to have moved down relative to the footwall, dip of fault usually greater than 45 degrees.</rdfs:comment>
+        <rdfs:label>Reverse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+The movement sense includes both reverse and dextral components.</rdfs:comment>
+        <rdfs:label>Reverse dextral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+The movement sense includes both reverse and sinistral components.</rdfs:comment>
+        <rdfs:label>Reverse sinistral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+Left-lateral separation sense, in plan view, the side opposite the observer appears displaced to the left.</rdfs:comment>
+        <rdfs:label>Sinistral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+        <rdfs:comment>Definition by FaultMovementSense CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense
+
+Reverse fault with dip typically less than 45 degrees, horizontal compression, rather than vertical displacement is characteristic.</rdfs:comment>
+        <rdfs:label>Thust</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+The fault is horizontal.</rdfs:comment>
+        <rdfs:label>Horizontal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+An extraction fault with some displacement within the fault plane.</rdfs:comment>
+        <rdfs:label>Mixed extraction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+The net slip of the fault lies between the strike and dip directions of the fault, the slip vector rakes between 10 and 80 degrees in the plane of the fault.</rdfs:comment>
+        <rdfs:label>Oblique slip</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+An extraction fault with no discernible displacement within the fault plane.</rdfs:comment>
+        <rdfs:label>Pure extraction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with reverse offset in the opposite direction.</rdfs:comment>
+        <rdfs:label>Scissor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+A variety of strike-slip fault along which the displacement suddenly stops or changes form, typically associated with mid-ocean ridges.</rdfs:comment>
+        <rdfs:label>Transform</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"/>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+A strike slip fault in which the faut plane is more or less vertical.</rdfs:comment>
+        <rdfs:label>Wrench</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+        <rdfs:comment>Definition by GeneticCategory CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geneticcategory
+Formation predominantly by human activity.</rdfs:comment>
+        <rdfs:label>Anthropogenic genesis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+        <rdfs:comment>Definition by GeneticCategory CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geneticcategory
+Formation predominantly by processes of erosion, mass wasting, transportation, deposition, precipitation and biogenic production that take place in Earth’s hydrosphere and atmosphere.</rdfs:comment>
+        <rdfs:label>Sedimentary genesis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole"/>
+        <rdfs:comment>Definition by GeologicUnitPartRole CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunitpartrole
+Entire described unit consists of a single part or constituent</rdfs:comment>
+        <rdfs:label>Only part</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank"/>
+        <rdfs:comment>Definition by StratigraphicRank CGI Vocabulary http://resource.geosciml.org/classifier/cgi/stratigraphicrank
+A body of predominantly intrusivehighly deformed and/or highly metamorphosed rock; distinguished and delimited on the basis of rock characteristics.</rdfs:comment>
+        <rdfs:label>Lithodeme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#Magnetic_susceptibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#Magnetic_susceptibility">
+        <rdf:type rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm"/>
+        <rdfs:label>Magnetic susceptibility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip">
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+	The net slip of the fault lies in the dip direction of the fault.</rdfs:comment>
+        <rdfs:label>Dip slip</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+A fault whose two sides have approached each other substantially in the direction perpendicular to the fault.</rdfs:comment>
+        <rdfs:label>Extraction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">
+        <rdfs:label>Strike slip</rdfs:label>
+        <rdfs:comment>Definition by FaultMovementType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype
+
+The net slip of the fault (slip vector) is parallel to the strike of the fault.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1518 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ontogeonous/geologicUnit#"
+     xml:base="http://purl.org/ontogeonous/geologicUnit"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/geologic_unit">
+        <rdfs:comment>GUIDE FOR A COMPLETE USE OF THE PRESENT ONTOLOGY
+For a complete reading of the ontology, it is useful to import the following ontologies:
+-OGN_0.1-ExternalVacabularies http://www.purl.org/ontogeonous/externalVocabularies
+-OGN_0.2-Properties http://www.purl.org/ontogeonous/properties
+-OGN_1.2-GeologicStructure 
+
+The root class of the present ontology (GeologicUnit) is described in the ontology
+-OGN_1-GeologicFeature</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasAlterationType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasAlterationType"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasChronostratigraphicComposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasChronostratigraphicComposition">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasDeformationStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasDeformationStyle"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasFossilContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasFossilContent"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasInternalGeologicStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasInternalGeologicStructure"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasLandSlideMovementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasLandSlideMovementType"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasLithology -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasLithology"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterial"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterialAbstractDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterialAbstractDescription"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasPedologicHorizonType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPedologicHorizonType"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasPolarityChrono -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPolarityChrono"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyName -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyName"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasRank -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRank"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedAboveBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedAboveBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBelowBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBelowBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBy"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#isCreatedByProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#isCreatedByProcess"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#isRelatedToEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#isRelatedToEvent"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#isTargetUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#isTargetUnitOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasNumericAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasNumericAge"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyMeasure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyMeasure"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#obeyToLawOfSuperposition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#obeyToLawOfSuperposition"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/properties#observableInOutcrop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_unit/properties#observableInOutcrop"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geneticcategory -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitpartrole -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/lithology -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/lithology"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/Excavation -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/Excavation"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle -->
+
+    <owl:Class rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#AlterationDescription -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#AlterationDescription"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#ChronostratigraphicEarthMaterials -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#ChronostratigraphicEarthMaterials"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterialDescription -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterialDescription"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#Fossil -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#Fossil"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#LandslideMovement -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#LandslideMovement"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PedologicHorizonType -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PedologicHorizonType"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PhysicalDescription -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalDescription"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#PolarityChrono -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PolarityChrono"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/external_vocabularies#RockMaterial -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#RockMaterial"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicEvent -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicEvent">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Fold -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Foliation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Foliation"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#Lineation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Lineation"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#AllostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#AllostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedAboveBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBelowBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#UnconformableContact"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary
+http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit
+Geologic unit defined by bounding surfaces. Not necessarily stratified.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/allostratigraphicUnit/
+Definition:AllostratigraphicUnit
+Geologic unit defined by bounding surfaces. Not necessarily stratified.
+Parent: GeologicUnit
+
+Definition by International Commission on Stratigraphy http://www.stratigraphy.org/upload/bak/uncon.htm
+Definition: Unconformity-bounded Units
+Unconformity-bounded units are bodies of rocks bounded above and below by significant unconformities.
+
+Definition by Subcommission on Quaternary Stratigraphy http://quaternary.stratigraphy.org/stratigraphicguide/allostratigraphy/
+An allostratigraphical unit is a body of sedimentary rock that is defined and identified only by its bounding discontinuities.
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;
+ICS: &quot;Unconformity-bounded units ...&quot;
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... defined by bounding surfaces&quot;
+INS - CGI: &quot;Not necessarily stratified.&quot;
+
+See definition of ICS below, that specifies such restrictions furtherly. We assume that Allostratigraphic Unit in INS-CGI is the same class as &apos;Unconformity-bounded units of ICS. 
+
+---
+
+ICS: &quot; ... are bodies of rocks&quot;
+=
+OPhasComposition (GSML/INS) CLASSCompositionPart OPhasMaterial CLASSCompoundMaterial (inherited from CLASSGeologicUnit → not includend in the axiom)
+
+---AND---
+
+ICS: &quot;...bounded above and below by significant unconformities&quot;
+=
+OPisBoundedByAboveBy CLASSUnconformableContact (GSML/INS)
+OPisBoundedByBelowBy CLASSUnconformableContact (GSML/INS)</rdfs:comment>
+        <rdfs:label>Allostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#AlterationUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#AlterationUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterialAbstractDescription"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#AlterationDescription"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasAlterationType"/>
+                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit
+Geologic unit defined by alteration process.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/alterationUnit/
+Definition: AlterationUnit
+Geologic unit defined by alteration process.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND--
+
+INS - CGI: &quot;... defined by alteration process&quot;
+OPhasMaterialAbstractDecription CLASSAlterationDescription (GSML)  OPhasAlterationType CLASSAlterationType (CGI)</rdfs:comment>
+        <rdfs:label>Alteration unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#ArtificialGround -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#ArtificialGround">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithogeneticUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory"/>
+                                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/artificial_ground
+Geologic unit defined by genesis involving direct human action to deposit or modify material.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/artificialGround/
+Definition: ArtificialGround
+Geologic unit defined by genesis involving direct human action to deposit or modify material.
+Parent: LithogeneticUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Parent: LithogeneticUnit&quot;
+=
+subCLASSLithogeneticUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... defined by genesis involving direct human action to deposit or modify material&quot;
+=
+OPisCreatedByProcess CLASSMaterialTransportAndDeposition (INS/SWEET) OPhasGeneticCategory CLASSAnthropogenic_genesis (CGI)</rdfs:comment>
+        <rdfs:label>Artificial ground</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#BiostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#BiostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole"/>
+                                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasFossilContent"/>
+                                <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#Fossil"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary
+http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit
+Geologic unit defined based on fossil content.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/biostratigraphicUnit/
+Definition: BiostratigraphicUnit
+Geologic unit defined based on fossil content.
+Parent: GeologicUnit
+
+Definition by International Commision on Stratigraphy http://www.stratigraphy.org/upload/bak/bio.htm
+Definition: BiostratigraphicUnit
+Biostratigraphic units (biozones) are bodies of strata that are defined or characterized on the basis of their contained fossils. Biostratigraphic units exist only where the particular diagnostic feature or attribute on which they are based has been identified. Biostratigraphic units, therefore, are objective units based on the identification of fossil taxa.[...]
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit...&quot;
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+ICS: &quot;Biostratigraphic units (biozones) are bodies of strata... &quot;
+=
+OPhasComposition CLASSCompositionPart (GSML) OPhasRole CLASSStratigraphicPart (CGI)
+
+---AND---
+
+INS - CGI: &quot;... defined based on fossil content&quot;
+=
+ICS: &quot;... that are defined or characterized on the basis of their contained fossils. Biostratigraphic units, therefore, are objective units based on the identification of fossil taxa&quot;
+
+OPhasFossilContent CLASSFossil</rdfs:comment>
+        <rdfs:label>Biostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#ChronostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#ChronostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasChronostratigraphicComposition"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#ChronostratigraphicEarthMaterials"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit
+Geologic unit that includes all rocks formed during a specific interval of geologic time
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/chronostratigraphicUnit/
+Definition: ChronostratigraphicUnit
+Geologic unit that includes all rocks formed during a specific interval of geologic time.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;	
+=
+subCLASS GeologicUnit
+
+---AND---
+
+INS - CGI: &quot;... that includes all rocks formed during a specific interval of geologic time&quot;
+=
+OPhasChronostratigraphicComposition CLASSChronostratigraphicEarthMaterials</rdfs:comment>
+        <rdfs:label>Chronostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#DeformationUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#DeformationUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithotectonicUnit"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasDeformationStyle"/>
+                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasInternalGeologicStructure"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
+                                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Foliation"/>
+                                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Lineation"/>
+                                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#observableInOutcrop"/>
+                                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit
+Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/deformationUnit/
+Definition: DeformationUnit
+Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop.
+Parent: LithotectonicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Lithotectonic unit ...&quot;	
+=
+subCLASS LithotectonicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... defined by deformation style&quot;
+=
+OPhasDeformationStyle CLASSDeformationStyle
+
+---AND---
+
+INS - CGI: &quot;or characteristic geologic structure observable in outcrop&quot;
+=
+OPhasInternalGeologicStructure CLASSFold,Foliation,Lineation,ShearDisplacementStructure
+DPobservableInOutcrop VALUEtrue</rdfs:comment>
+        <rdfs:label>Deformation unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#ExcavationUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#ExcavationUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithogeneticUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/Excavation"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory"/>
+                                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/excavation_unit
+Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled/landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/excavationUnit/
+Definition: ExcavationUnitUnit
+Geologic unit defined by human-made genesis involving excavation.
+Parent: LithogeneticUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Parent: LithogeneticUnit&quot;
+=
+subCLASSLithogeneticUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... defined by genesis involving direct human action to deposit or modify material&quot;
+=
+OPisCreatedByProcess CLASSExcavation (INS/SWEET) OPhasGeneticCategory CLASSAnthropogenic_genesis (CGI)</rdfs:comment>
+        <rdfs:label>Excavation unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#GeophysicalUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#GeophysicalUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterialAbstractDescription"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalDescription"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyName"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyMeasure"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary
+http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit
+Geologic unit defined by its geophysical characteristics. Denotes that the properties used to define the unit are measured by intrumental techniques, not directly observable by humans, e.g. density, magnetic susceptibility, magnetization, electrical conductivity.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geophysicalUnit/
+Definition: GeophysicalUnit
+Geologic unit defined by its geophysical characteristics.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... its geophysical characteristics&quot;
+=
+OPhasMaterialAbstractDescription CLASSPhysicalDescription (GSML) OPhasPropertyMeasure DATATYPEdecimal; OPhasPropertyName CLASSPhysicalPropertyTerm (CGI)</rdfs:comment>
+        <rdfs:label>Geophysical unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#LithodemicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithodemicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithostratigraphicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole"/>
+                                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRank"/>
+                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#obeyToLawOfSuperposition"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit
+Lithostratigraphic unit that lacks stratification
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithodemicUnit/
+Definition: LithodemicUnit
+Lithostratigraphic unit that lacks stratification
+Parent: LithostratigraphicUnit
+
+Definition by SubCommission on Quaternary Stratigraphy http://quaternary.stratigraphy.org/stratigraphicguide/lithodemic-stratigraphy/
+Definition: LithodemicUnit
+Bodies of rock which do not conform to the Law of Superposition are described as lithodemic. They are generally composed of intrusive, highly deformed or metamorphic rocks, determined and delimited on the basis of rock characteristics.
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Lithostratigraphic unit ...&quot;	
+=
+subCLASS LithostratigraphicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... that lacks stratification&quot;
+=
+OPhasRank VALUELithodeme (CGI)
+OPhasComposition CLASSCompositionPart (GSML) AND OPhasRole VALUEOnly_part (CGI)
+
+---AND---
+
+SQS: Bodies of rock which do not conform to the Law of Superposition are described as lithodemic.
+=
+DPobeyToLawOfSuperposition VALUEfalse
+
+---
+
+SQS: They are generally composed of intrusive, highly deformed or metamorphic rocks, determined and delimited on the basis of rock characteristics.
+=
+This is a specification of what is admitted. Formally, it is a consequence of the complementary of the negation above.</rdfs:comment>
+        <rdfs:label>Lithodemic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#LithogeneticUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithogeneticUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterialAbstractDescription"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterialDescription"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory"/>
+                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory"/>
+                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit
+Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property. Example-- alluvial deposits, glacial deposits.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithogeneticUnit/
+Definition: LithogeneticUnit
+Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic Unit ...&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;...defined by genesis&quot;
+=
+OPisCreatedByProcess CLASSEventProcess (SWEET)
+OPhasGeneticCategory CLASSGeneticCategory 
+
+---AND---
+
+INS - CGI: &quot;he genesis is manifested by material properties, but the material is not the defining property.&quot;	
+=
+OPhasMaterialAbstractDescription CLASSCompoundMaterialDescription (GSML) OPhasGeneticCategory CLASSGeneticCategory (CGI)</rdfs:comment>
+        <rdfs:label>Lithogenetic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#LithologicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithologicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterial"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#RockMaterial"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasLithology"/>
+                                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/lithology"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit
+Geologic unit defined by lithology independent of relationships to other units. Denotes a &apos;kind&apos; of rock body characterized by lithology, e.g. basaltic rocks.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithologicUnit/
+Definition: LithologicUnit
+Geologic unit defined by lithology independent of relationships to other units.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... defined by lithology...&quot;
+=
+OPhasComposition CLASSCompositionPart OPhasMaterial CLASSRockMaterial OPhaslithology CLASSLithology
+
+---
+
+INS - CGI: &quot;...indipendent of relationships to other units.&quot;	
+= 
+It is not necessary specify</rdfs:comment>
+        <rdfs:label>Lithologic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#LithostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasComposition"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterial"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#RockMaterial"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasLithology"/>
+                                                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/lithology"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole"/>
+                                                <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRank"/>
+                                                <owl:allValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRank"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole"/>
+                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit
+Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithostratigraphicUnit/
+Definition: LithostratigraphicUnit
+Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot; defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties&quot;	
+=
+OPhasComposition CLASSCompositionPart OPhasMaterial CLASSRockMaterial (GSML) OPhasLithology CLASSLithology (CGI)
+
+---AND---
+INS - CGI: &quot; and stratigraphic relationships&quot;
+=
+OPhasRank CLASSStratigraphicRank (CGI); OPhasRole CLASSGeologicUnitPartRole (CGI) (these properties refer to the   whole GeologicUnit)
+
+OPhasComposition CLASSCompositionPart OPhasRank CLASSStratigraphicRank (CGI);                  
+
+OPhasComposition CLASSCompositionPart OPhasRole CLASSGeologicUnitPartRole (CGI) (these properties refer to each CompositionPart of the GeologicUnit)</rdfs:comment>
+        <rdfs:label>Lithostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#LithostratigraphicUnitSS -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithostratigraphicUnitSS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithostratigraphicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#obeyToLawOfSuperposition"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>New class, not present in GeologicUnitType CGI Vocabulary
+
+New definition by https://www.di.unito.it/wikigeo/index.php?title=LithostratigraphicUnitSS
+LithostratigraphicUnit that obey to Law of Superposition
+
+EQUIVALENT TO
+
+New: &quot;LithostratigraphicUnit&quot;	
+=
+subcCLASS LithostratigraphicUnit (GSML/INS)
+
+---AND---
+
+New: &quot;&quot;that obeys to Law of Superposition&quot;	
+=
+DPobeyToLawOfSuperposition VALUEtrue</rdfs:comment>
+        <rdfs:label>Lithostratigraphic unit SS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#LithotectonicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithotectonicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasInternalGeologicStructure"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#Foliation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isBoundedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isRelatedToEvent"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicEvent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit
+Geologic unit defined defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithotectonicUnit/
+Definition: LithotectonicUnit
+Geologic unit defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit&quot;	
+=
+subCLASSGeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;defined on basis of structural or deformation features&quot;
+=
+OPhasInternalGeologicStructure CLASSFoliation (The property OPhasInternalGeologicStructure represent the occurrence of a typical geometrical arrangement of the unit due to a tectonic deformation: the CGIVocabulary FoliationType provides all the possible values)
+
+---AND---
+
+INS - CGI: &quot;mutual relations&quot;
+=
+OPisBoundedBy CLASSShearDisplacementStructure (Interpreted as spatial relations with other units imposed by a SDS)
+
+---AND---
+
+INS - CGI: &quot; origin or historical evolution&quot;
+=
+OPisRelatedToEvent CLASSGeologicEvent (GSML/INS)
+
+---
+INS - CGI: &quot;Contained material may be igneous, sedimentary, or metamorphic&quot;
+=
+OPhasComposition CLASSCompositionPart (GSML) OPhasMaterial CLASSCompoundMaterial (GSML)
+Inherited from class geologicunit - gsml/ins. As igneous + sedimentary + metamorphic is totality of compoundmaterial === not included in the axiom</rdfs:comment>
+        <rdfs:label>Lithotectonic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#MagnetostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#MagnetostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#GeophysicalUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasMaterialAbstractDescription"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalDescription"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyName"/>
+                                        <owl:hasValue rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/externalVocabularies#Magnetic_susceptibility"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPropertyMeasure"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/magnetostratigraphic_unit
+Geologic unit defined by magnetic characteristics.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/magnetostratigraphicUnit/
+Definition: MagnetostratigraphicUnit
+Geologic unit defined by magnetic characteristics.
+Parent: GeophysicalUnit
+
+EQUIVALENT TO
+
+Parent: GeophysicalUnit
+=
+subCLASS GeophysicalUnit (CGI)
+
+---AND---
+
+INS - CGI: &quot;... its geophysical characteristics&quot;
+OPhasMaterialAbstractDescription CLASSPhysicalDescription (GSML) OPhasPropertyMeasure DATATYPEdecimal; OPhasPropertyName VALUEMagnetic_susceptibility (CGI)</rdfs:comment>
+        <rdfs:label>Magnetostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#MassMovementUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#MassMovementUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_unit#LithogeneticUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasLandSlideMovementType"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#LandslideMovement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isCreatedByProcess"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasGeneticCategory"/>
+                                        <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/mass_movement_unit
+Geologic unit produced by gravity driven, down-slope displacemnt of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/massmovementUnit/
+Definition: MassMovementUnit
+Geologic unit produced by gravity driven, down-slope displacement of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space.
+Parent: LithogeneticUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Parent: LithogeneticUnit&quot;
+=
+subCLASS LithogeneticUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... produced by gravity driven, down-slope displacement of material&quot;
+=
+OP isCreatedByProcess some Class MassWastingDeposition - GSML/INS and OP hasGeneticCategoy value Sedimentary_Genesis
+
+---AND---
+
+INS - CGI: &quot;... and characterized by the type of movement giving rise to the deposit...&quot;
+=
+OP hasLandSlideMovementType some class LandSlideMovement
+
+---
+
+INS - CGI: &quot;...  and by how the individual movement types present in the deposit are related in time and space.&quot;
+=
+we considered this part not necessary for the classification of an item in such class</rdfs:comment>
+        <rdfs:label>Mass movement unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#PedostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#PedostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPedologicHorizonType"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#PedologicHorizonType"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#isTargetUnitOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasRole"/>
+                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit
+Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated).
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/pedostratigraphicUnit/
+Definition: PedostratigraphicUnit
+Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated).
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... represents a single pedologic horizon ...&quot;
+=
+OPhasPedologicHorizonType CLASSPedologicHorizonType 
+
+---AND---
+
+INS - CGI: &quot;...in a sequence of strata (consolidated or non-consolidated.)&quot;
+=
+OPisTargetUnitOf CLASSGeologicUnitHierarchy (GSML) OPhasRole CLASSStratigraphicPart</rdfs:comment>
+        <rdfs:label>Pedostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit#PolarityChronostratigraphicUnit -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_unit#PolarityChronostratigraphicUnit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasPolarityChrono"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#PolarityChrono"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_unit/properties#hasNumericAge"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Definition by GeologicUnitType CGI Vocabulary http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit
+Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geologic time.
+
+Definition by INSPIRE DataSpecification 3 http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/polaritiyChronostratigraphicUnit/
+Definition: PolarityChronostratigraphicUnit
+Geologic unit defined by primary magnetic-polarity record imposed when the rock was deposited or crystallized during a specific interval of geologic time.
+Parent: GeologicUnit
+
+EQUIVALENT TO
+
+INS - CGI: &quot;Geologic unit ...&quot;	
+=
+subCLASS GeologicUnit (GSML/INS)
+
+---AND---
+
+INS - CGI: &quot;... defined by primary magnetic-polarity record ...&quot;
+=
+OPhasPolarityChrono CLASSPolarityChrono (CGI)
+
+                ---AND---
+
+                INS - CGI: &quot;...imposed when the rock was deposited or crystallized 
+                during a specific interval of geologic time.&quot;
+                 =
+                DPhasNumericAge VALUEdecimal</rdfs:comment>
+        <rdfs:label>Polarity chronostratigraphic unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme -->
+
+    <owl:NamedIndividual rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme">
+        <rdf:type rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/geologic_unit/externalVocabularies#Magnetic_susceptibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/ontogeonous/geologic_unit/externalVocabularies#Magnetic_susceptibility">
+        <rdf:type rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#PhysicalPropertyTerm"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
