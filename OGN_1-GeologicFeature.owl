@@ -10,12 +10,12 @@
     <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/geologic_feature">
         <rdfs:comment>GUIDE FOR A COMPLETE USE OF THE PRESENT ONTOLOGY
 For a complete reading of the ontology, it is useful to import the following ontologies:
--OGN_0.1-ExternalVacabularies http://www.purl.org/ontogeonous/externalVocabularies
--OGN_0.2-Properties http://www.purl.org/ontogeonous/properties
+-OGN_0.1-ExternalVacabulary http://www.purl.org/ontogeonous/external_vocabulary
+-OGN_0.2-Property http://www.purl.org/ontogeonous/property
 
 The ontologies of the developed subclasses are:
--OGN_1.1-GeologicUnit http://www.purl.org/ontogeonous/geologicUnit
--OGN_1.2-GeologicStructure http://www.purl.org/ontogeonous/geologicStructure</rdfs:comment>
+-OGN_1.1-GeologicUnit http://www.purl.org/ontogeonous/geologic_unit
+-OGN_1.2-GeologicStructure http://www.purl.org/ontogeonous/geologic_structure</rdfs:comment>
     </owl:Ontology>
     
 
@@ -31,112 +31,112 @@ The ontologies of the developed subclasses are:
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasComposition -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasComposition -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasComposition">
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasComposition">
         <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
-        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#CompositionPart"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventEnvironment -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasEventEnvironment -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventEnvironment"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasEventEnvironment"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventProcess -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasEventProcess -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventProcess"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasEventProcess"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicStructureAssociationMember -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicStructureAssociationMember -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicStructureAssociationMember">
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicStructureAssociationMember">
         <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicUnit -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicUnit">
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit">
         <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeometricalObject -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeometricalObject">
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject">
         <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
         <rdfs:range rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasHierarchyLink -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasHierarchyLink -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasHierarchyLink">
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasHierarchyLink">
         <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
-        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#GeologicUnitHierarchy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasLandformShape -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasLandformShape -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasLandformShape"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasLandformShape"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasMaterial -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterial -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasMaterial">
-        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
-        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterial">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#CompositionPart"/>
+        <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#CompoundMaterial"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasNamedAge -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasNamedAge -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasNamedAge"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasNamedAge"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNamedAge -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNamedAge -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNamedAge"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNamedAge"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasTargetUnit -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasTargetUnit -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasTargetUnit">
-        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasTargetUnit">
+        <rdfs:domain rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#GeologicUnitHierarchy"/>
         <rdfs:range rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNamedAge -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNamedAge -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNamedAge"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNamedAge"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#isCreatedByProcess -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#isCreatedByProcess"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#isEventRelatedTo -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isEventRelatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#isEventRelatedTo"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isEventRelatedTo"/>
     
 
 
@@ -151,15 +151,15 @@ The ontologies of the developed subclasses are:
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNumericAge -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNumericAge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNumericAge"/>
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNumericAge"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNumericAge -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNumericAge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNumericAge"/>
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNumericAge"/>
     
 
 
@@ -192,42 +192,33 @@ The ontologies of the developed subclasses are:
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#CompositionPart -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#CompositionPart"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#CompoundMaterial -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial"/>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#CompoundMaterial"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#GeochronologicalUnit -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#GeochronologicalUnit"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#GeologicUnitHierarchy -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#GeologicUnitHierarchy"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#Shape -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#Shape -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#Shape"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicAssociation -->
-
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicAssociation">
-        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
-        <rdfs:label>Geologic association</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#Shape"/>
     
 
 
@@ -243,48 +234,48 @@ The ontologies of the developed subclasses are:
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNamedAge"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNamedAge"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+                                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#GeochronologicalUnit"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNamedAge"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNamedAge"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+                                        <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#GeochronologicalUnit"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasOlderNumericAge"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNumericAge"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasYoungerNumericAge"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNumericAge"/>
                                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasNamedAge"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasNamedAge"/>
                                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                                <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#GeochronologicalUnit"/>
+                                <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#GeochronologicalUnit"/>
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasEventProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#isEventRelatedTo"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isEventRelatedTo"/>
                         <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasEventEnvironment"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasEventEnvironment"/>
                         <owl:allValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -318,6 +309,15 @@ The abstract GeologicFeature class represents a conceptual feature that is hypot
     
 
 
+    <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicFeatureAssociation -->
+
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeatureAssociation">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
+        <rdfs:label>Geologic feature association</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure -->
 
     <owl:Class rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure">
@@ -326,11 +326,11 @@ The abstract GeologicFeature class represents a conceptual feature that is hypot
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeologicUnit"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit"/>
                         <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasGeometricalObject"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
                         <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -380,27 +380,27 @@ However, some changes have been made to the organization of the subclasses propo
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasComposition"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasComposition"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#CompositionPart"/>
+                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#CompositionPart"/>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasMaterial"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#CompoundMaterial"/>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterial"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#CompoundMaterial"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
                             </owl:Restriction>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasHierarchyLink"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasHierarchyLink"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#GeologicUnitHierarchy"/>
+                                            <rdf:Description rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#GeologicUnitHierarchy"/>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasTargetUnit"/>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasTargetUnit"/>
                                                 <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
@@ -445,11 +445,11 @@ http://resource.geosciml.org/classifier/cgi/geologicunittype</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicFeature"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#hasLandformShape"/>
-                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#Shape"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasLandformShape"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#Shape"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_feature/properties#isCreatedByProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/eventprocess"/>
                     </owl:Restriction>
                 </owl:intersectionOf>

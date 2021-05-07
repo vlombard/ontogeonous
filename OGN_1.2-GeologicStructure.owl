@@ -14,8 +14,8 @@
     <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/geologic_structure">
         <rdfs:comment>GUIDE FOR A COMPLETE USE OF THE PRESENT ONTOLOGY
 For a complete reading of the ontology, it is useful to import the following ontologies:
--OGN_0.1-ExternalVacabularies http://www.purl.org/ontogeonous/externalVocabularies
--OGN_0.2-Properties http://www.purl.org/ontogeonous/properties
+-OGN_0.1-ExternalVacabulary http://www.purl.org/ontogeonous/externalVocabularies
+-OGN_0.2-Property http://www.purl.org/ontogeonous/properties
 
 The root class of the present ontology (GeologicStructure) is described in the ontology
 -OGN_1-GeologicFeature http://www.purl.org/ontogeonous</rdfs:comment>
@@ -54,66 +54,66 @@ The root class of the present ontology (GeologicStructure) is described in the o
     <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#bounds -->
 
     <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#bounds">
-        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasLithology -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasLithology"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
-    
-
-
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isRelatedToEvent -->
-
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isRelatedToEvent"/>
     
 
 
     <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin -->
 
     <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin">
-        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeologicUnit"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasLithology -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasLithology"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isRelatedToEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isRelatedToEvent"/>
     
 
 
@@ -128,46 +128,46 @@ The root class of the present ontology (GeologicStructure) is described in the o
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasDip -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip">
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasHiatusInDeposition -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition"/>
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasHiatusInDeposition"/>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMeasurableOrientation -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation">
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMeasurableOrientation">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement">
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isMetamorphic -->
 
-    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic"/>
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isMetamorphic"/>
     
 
 
@@ -274,9 +274,9 @@ The root class of the present ontology (GeologicStructure) is described in the o
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#InflectedPlane -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane"/>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#InflectedPlane"/>
     
 
 
@@ -309,7 +309,7 @@ The root class of the present ontology (GeologicStructure) is described in the o
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile"/>
                         <owl:hasValue>Anticline</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -342,7 +342,7 @@ DPhasFoldProfile VALUEAnticline</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile"/>
                         <owl:hasValue>Antiform</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -375,7 +375,7 @@ DPhasFoldProfile VALUEAntiform</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#PrimaryFoliation"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -427,7 +427,7 @@ A tectonic foliation in a rock characterized by a tendency for the rock to split
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DepositionalContact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasHiatusInDeposition"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -465,12 +465,12 @@ DPhasHiatusInDeposition VALUEfalse</rdfs:comment>
                         <owl:onClass rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -519,7 +519,7 @@ OPhasGeometricalObject CLASS2DSurface</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Contact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -558,7 +558,7 @@ Not restrictive, omitted</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleNormalFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -591,7 +591,7 @@ OPhasFaultMovementSense VALUEdetachment</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -631,7 +631,7 @@ subCLASS StrikeSlipFault
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -667,7 +667,7 @@ The axiom is based on the value &quot;DipSlip&quot; present in the FaultMovement
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -700,11 +700,11 @@ OP hasFaultMovementType VALUEExtraction</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
-                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#InflectedPlane"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#InflectedPlane"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -745,15 +745,15 @@ this part can be omitted as it&apos;s not important to discriminate folds from o
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
-                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin"/>
                         <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -811,21 +811,21 @@ implicit above</rdfs:comment>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle"/>
                                 <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle"/>
                             </owl:Restriction>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle"/>
                                 <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile"/>
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
                         <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -865,13 +865,13 @@ DPhasMovement VALUEfalse</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMeasurableOrientation"/>
                                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -898,7 +898,7 @@ The axiom derives from the contrapposition with the NonDirectionalStructure clas
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -940,7 +940,7 @@ DP hasDip VALUE (&gt;=45)</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -951,7 +951,7 @@ DP hasDip VALUE (&gt;=45)</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NormalFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -993,7 +993,7 @@ subCLASS NormalFault</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ObliqueSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1021,7 +1021,7 @@ subCLASS NormalFault</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1032,7 +1032,7 @@ subCLASS NormalFault</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ReverseFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1074,7 +1074,7 @@ subCLASS ReverseFault</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1120,7 +1120,7 @@ As in the FaultMovementType CGI Vocabulary there is the term &quot;horizontal&qu
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1159,7 +1159,7 @@ OPhasFaultMovementSense VALUEnormal_sinistral</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1199,15 +1199,15 @@ OPhasFaultMovementSense VALUEreverse_sinistral</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
-                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Line"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isWithin"/>
                         <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
+                        <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Line"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1256,7 +1256,7 @@ OPisWithin CLASSGeologicUnit</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1298,7 +1298,7 @@ DPhasDip VALUE[&lt; 45]</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1309,7 +1309,7 @@ DPhasDip VALUE[&lt; 45]</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#NormalFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1351,7 +1351,7 @@ subCLASS NormalFault</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ObliqueSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1385,7 +1385,7 @@ subCLASS NormalFault</rdfs:comment>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isMetamorphic"/>
                                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -1439,7 +1439,7 @@ A metamorphic contact separating rocks that have undergone metamorphism of a par
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ExtractionFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1479,11 +1479,11 @@ OPhasFaultMovementType VALUEmixed_extraction</rdfs:comment>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasLithology"/>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasLithology"/>
                                                 <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/lithology/igneous_material"/>
                                             </owl:Restriction>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isMetamorphic"/>
+                                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isMetamorphic"/>
                                                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                                             </owl:Restriction>
                                         </owl:unionOf>
@@ -1499,7 +1499,7 @@ OPhasFaultMovementType VALUEmixed_extraction</rdfs:comment>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicUnit"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -1544,13 +1544,13 @@ OPbounds CLASSGeologicUnit OPisCreatedByProcess CLASSSedimentaryProcess</rdfs:co
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeologicStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://sweetontology.net/reprSpaceGeometry/GeometricalObject"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMeasurableOrientation"/>
+                                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMeasurableOrientation"/>
                                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -1578,7 +1578,7 @@ The axiom does not derive from a direct translation of the defintion, as it is n
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DipSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1611,7 +1611,7 @@ OPhasFaultMovementSense VALUENormal</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1655,11 +1655,11 @@ OPhasFaultMovementType VALUEObliqueSlip</rdfs:comment>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                                 <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deposition"/>
                             </owl:Restriction>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                                <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                                 <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation"/>
                             </owl:Restriction>
                         </owl:unionOf>
@@ -1697,7 +1697,7 @@ OPisCreatedByProcess CLASSMagmaticCrystallisation</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ExtractionFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1729,7 +1729,7 @@ OPhasFaultMovementType VALUEpure_extraction</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DipSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1762,7 +1762,7 @@ OPhasFaultMovementSense VALUEReverse</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1802,7 +1802,7 @@ OPhasFaultMovementSense VALUEnormal_dextral</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleObliqueSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1854,7 +1854,7 @@ A fabric defined the parallel, planar arrangement of mineral grains having a pla
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1887,15 +1887,15 @@ OPhasFaultMovementType VALUEScissor</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#GeologicStructureSS"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDeformationStyle"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasGeometricalObject"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject"/>
                         <owl:someValuesFrom rdf:resource="http://sweetontology.net/reprSpaceGeometry/Plane"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasMovement"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1955,7 +1955,7 @@ http://resource.geosciml.org/classifier/cgi/faulttype</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementSense"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1995,7 +1995,7 @@ subCLASS StrikeSlipFault
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ShearDisplacementStructure"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2028,7 +2028,7 @@ OPhasFaultMovementType VALUEStrike-Slip</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile"/>
                         <owl:hasValue>Syncline</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2061,7 +2061,7 @@ DPhasFoldProfile VALUESyncline</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Fold"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFoldProfile"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile"/>
                         <owl:hasValue>Synform</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2094,7 +2094,7 @@ DPhasFoldProfile VALUESynform</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Foliation"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/deformation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2127,7 +2127,7 @@ OPisCreatedByProcess CLASSDeformation</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#Lineation"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#isCreatedByProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2160,7 +2160,7 @@ OPisCreatedByProcess CLASSTectonicProcess</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#LowAngleFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2171,7 +2171,7 @@ OPisCreatedByProcess CLASSTectonicProcess</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#ReverseFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -2217,7 +2217,7 @@ As in the FaultMovementType CGI Vocabulary there is the term &quot;thrust&quot;,
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2250,7 +2250,7 @@ OPhasFaultMovementType VALUEtransform</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#DepositionalContact"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasHiatusInDeposition"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasHiatusInDeposition"/>
                         <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2283,7 +2283,7 @@ DPhasHiatusInDeposition VALUEtrue</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#HighAngleFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasFaultMovementType"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType"/>
                         <owl:hasValue rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2294,7 +2294,7 @@ DPhasHiatusInDeposition VALUEtrue</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_structure#StrikeSlipFault"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geologic_structure/properties#hasDip"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip"/>
                         <owl:someValuesFrom>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
