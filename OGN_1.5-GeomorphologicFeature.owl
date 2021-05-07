@@ -21,9 +21,9 @@
     
 
 
-    <!-- http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess -->
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess -->
 
-    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess"/>
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
     
 
 
@@ -44,9 +44,9 @@
     
 
 
-    <!-- http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess -->
+    <!-- http://www.purl.org/ontogeonous/external_vocabulary#NaturalEarthProcess -->
 
-    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess"/>
+    <owl:Class rdf:about="http://www.purl.org/ontogeonous/external_vocabulary#NaturalEarthProcess"/>
     
 
 
@@ -82,7 +82,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
                         <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -302,8 +302,8 @@ An anthropogenic geomorphologic feature is a geomorphologic feature (i.e., landf
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.purl.org/ontogeonous/geologic_feature#GeomorphologicFeature"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/geomorphologic_feature/properties#isCreatedByProcess"/>
-                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabularies#NaturalEarthProcess"/>
+                        <owl:onProperty rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess"/>
+                        <owl:someValuesFrom rdf:resource="http://www.purl.org/ontogeonous/external_vocabulary#NaturalEarthProcess"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
