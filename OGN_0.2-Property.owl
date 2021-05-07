@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.purl.org/ontogeonous/properties#"
+     xml:base="http://www.purl.org/ontogeonous/properties"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property">
+        <rdfs:comment>This ontology contais all the properties that are necessary for all the axioms of the OntoGeonous ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#bounds -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#bounds">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit"/>
+        <owl:inverseOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBy"/>
+        <rdfs:comment>This property connects a geologic structure to the bounded geologic units.</rdfs:comment>
+        <rdfs:label>bounds</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasAlterationType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasAlterationType">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#143
+The property alterationType:AlterationTypeTerm contains a term from a controlled vocabulary of alteration types (e.g., potassic, argillic, advanced argillic).</rdfs:comment>
+        <rdfs:label>has alteration type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasChronostratigraphicComposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasChronostratigraphicComposition">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasComposition"/>
+        <rdfs:label>has chronostratigraphic composition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasComposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasComposition">
+        <rdfs:comment>Defined by GeoScienceML 4.1 
+http://docs.opengeospatial.org/is/16-008/16-008.html#52
+The property composition is an association that links a GeologicUnit with CompositionParts to describe the material composition of the GeologicUnit (e.g., a detailed, instance specific, lithologic description)</rdfs:comment>
+        <rdfs:label>has composition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasDeformationStyle">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#492
+If present, the property deformationStyle:Primitive::CharacterString contain a human readable description of the style of deformation (e.g. brittle, ductile etc.) for the ShearDisplacementStructure.
+
+Relates a GeologicFeature to an instance of the DeformationStyle CGI vocabulary http://resource.geosciml.org/classifier/cgi/deformationstyle</rdfs:comment>
+        <rdfs:label>has deformation style</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasEventEnvironment -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasEventEnvironment">
+        <rdfs:label>has event environment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasEventProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasEventProcess">
+        <rdfs:label>has event process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovement -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovement">
+        <rdfs:comment>Top property of has fault movement Type and Sense; it relates a ShearDisplacementStructure to a value coming from both the CGI Vocabularies Fault Movement Type and Fault Movement Sense. 
+The values are:
+-sinistral
+-dextral
+-normal
+-inverse
+-scissor
+-extraction (plus pure and mixed extraction)
+-strike slip
+-horizontal</rdfs:comment>
+        <rdfs:label>has fault movement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementSense">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#197
+The property movementSense:MovementSenseTerm contains a term from a controlled vocabulary that describes the movement sense of displacement along a geologic structure (e.g., dextral, sinistral).
+
+Relates a GeologicFeature to an instance of the FaultMovementSense CGI vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementsense</rdfs:comment>
+        <rdfs:label>has fault movement sense</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFaultMovementType">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#198
+The property movementType:MovementTypeTerm contains a term from a controlled vocabulary that defines the type of movement on a shear displacement structure (e.g. dip-slip, strike-slip).
+
+Relates a GeologicFeature to an instance of the FaultMovementSense CGI vocabulary http://resource.geosciml.org/classifier/cgi/faultmovementtype</rdfs:comment>
+        <rdfs:label>has fault movement type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFossilContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFossilContent">
+        <rdfs:comment>This property link a GeologicUnit that contains fossils to class Fossil.</rdfs:comment>
+        <rdfs:label>has fossil content</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeneticCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeneticCategory">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#152 
+The property geneticCategory (SWE::Category) provides a term from a controlled vocabulary that represents a summary geologic history of the material. (i.e., a genetic process classifier term). Examples include igneous, sedimentary, metamorphic, shock metamorphic, volcanic, pyroclastic.</rdfs:comment>
+        <rdfs:label>has genetic category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicStructureAssociationMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicStructureAssociationMember">
+        <rdfs:comment>A new property introduced to associate the GeologicStructureAssociation class to its single composing GeologicStructure</rdfs:comment>
+        <rdfs:label>has geologic structure association member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit">
+        <rdfs:comment>Generic property that connects a geologic structure with the related geologic units.</rdfs:comment>
+        <rdfs:label>has geologic unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeometricalObject">
+        <rdfs:comment>This property connects a GeologicFeature to an abstract Geometrical object (SWEET ontology, http://cor.esipfed.org/ont?iri=http://sweetontology.net/reprSpaceGeometry/GeometricalObject) that can be assumed that be representation</rdfs:comment>
+        <rdfs:label>has geometrical object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasHierarchyLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasHierarchyLink">
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#51
+The property hierarchyLink is an association that links a GeologicUnit with a GeologicUnitHierarchy to represent containment of a part GeologicUnit within another GeologicUnit. It indicates a subsidiary unit with its role and proportion with respect to the container unit.  For example, members are described as part of formations, or different facies can be described as parts of a GeologicUnit.</rdfs:comment>
+        <rdfs:label>has hierarchy link</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasInternalGeologicStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasInternalGeologicStructure">
+        <owl:inverseOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isWithin"/>
+        <rdfs:comment>This property relates a GeologiUnit with an internal GeologicStructure.</rdfs:comment>
+        <rdfs:label>has internal Geologic structure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasLandSlideMovementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasLandSlideMovementType">
+        <rdfs:comment>This property links a feature related to landslide (e.g. a MassMovementUnit, or a depositional GeomorphologicUnit) with LandSlideMovementType class.</rdfs:comment>
+        <rdfs:label>has landslide movement type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasLandformShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasLandformShape">
+        <rdfs:label>has landform shape</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasLithology -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasLithology">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#69
+The lithology:LithologyTerm property provides a term identifying the lithology class from a controlled vocabulary.</rdfs:comment>
+        <rdfs:label>has lithology</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterial">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#62
+The material:EarthMaterial property contains the material description (8.4.1.6) of the composing part.</rdfs:comment>
+        <rdfs:label>has material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterialAbstractDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMaterialAbstractDescription">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#53
+The property gbMaterialDescription:EarthMaterialAbstractDescription is a placeholder that provides detailed material description.</rdfs:comment>
+        <rdfs:label>has material abstract description</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasNamedAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasNamedAge">
+        <rdfs:label>has named age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNamedAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNamedAge">
+        <rdfs:label>has older named age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasPedologicHorizonType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasPedologicHorizonType">
+        <rdfs:comment>This property links a feature to class PedologicHorizon.</rdfs:comment>
+        <rdfs:label>has pedologic horizon type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasPolarityChrono -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasPolarityChrono">
+        <rdfs:label>has polarity chrono</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasPropertyName -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasPropertyName">
+        <rdfs:comment>Definition by GeoSciencML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#179
+The property propertyName:PhysicalPropertyTerm contains a term from a controlled vocabulary of physical properties of rock materials (e.g., density, porosity, magnetic susceptibility, remnant magnetism, permeability, seismic velocity).</rdfs:comment>
+        <rdfs:label>has property name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasRank -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasRank">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#50
+The property rank:RankTerm contains a term that classifies the geologic unit in a generalization hierarchy from most local/smallest volume to most regional/largest.
+Examples: group, subgroup, formation, member, bed, intrusion, complex, batholith</rdfs:comment>
+        <rdfs:label>has rank</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasRole">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#56
+The role:GeologicUnitHierarchyRoleTerm property provides a term describing the nature of the parts, e.g. facies, stratigraphic, interbeds, geographic, eastern facies.
+
+In OntoGeonous this property associates a costituent in a GeologicUnit (a CompositionPart in a Geologic Unit or a Geologic Unit in a GeologicUnitHierarchy) to GeologicUnitPartRole class. This class contains GeologicUnitPartRole CGI vocabulary.</rdfs:comment>
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasTargetUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasTargetUnit">
+        <owl:inverseOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isTargetUnitOf"/>
+        <rdfs:comment>Defined by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#58
+The property targetUnit is an association that specifies exactly one GeologicUnit that is a proper part of another GeologicUnit.</rdfs:comment>
+        <rdfs:label>has target unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNamedAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNamedAge">
+        <rdfs:label>has younger named age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedAboveBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedAboveBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBy"/>
+        <rdfs:label>is bounded above by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBelowBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBelowBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBy"/>
+        <rdfs:label>is bounded below by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isBoundedBy">
+        <rdfs:comment>This property relates a Geologic Unit bounded by a Geologic Structure to the bounding Geologic Structure</rdfs:comment>
+        <rdfs:label>is bounded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isCreatedByProcess">
+        <rdfs:comment>This property associates a GeologicFeature with the EventProcess that created it</rdfs:comment>
+        <rdfs:label>is created by process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isEventRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isEventRelatedTo">
+        <rdfs:label>is event related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isRelatedToEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isRelatedToEvent">
+        <rdfs:label>is related to event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isTargetUnitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isTargetUnitOf">
+        <rdfs:label>is target unit of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isWithin">
+        <rdfs:subPropertyOf rdf:resource="http://www.purl.org/ontogeonous/ontogeonous_property#hasGeologicUnit"/>
+        <rdfs:comment>This property relates a geologic structure with a geologic unit it is internal to.</rdfs:comment>
+        <rdfs:label>is within</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasDip -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasDip">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has dip</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasFoldProfile">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Anticline</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Antiform</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Syncline</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Synform</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label>has fold profile</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasHiatusInDeposition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasHiatusInDeposition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This property indicates if there is a hiatus between two GeologicUnit separeted by a DepositionalContact</rdfs:comment>
+        <rdfs:label>has hiatus in deposition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMeasurableOrientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMeasurableOrientation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>has measurable orientation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasMovement">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This property indicates if a geologic structure has a movement.</rdfs:comment>
+        <rdfs:label>has movement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasNumericAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasNumericAge">
+        <rdfs:comment>Definition by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#73
+The numericAge:NumericAgeRange property provides an age in absolute year before present (BP).</rdfs:comment>
+        <rdfs:label>has numeric age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNumericAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasOlderNumericAge">
+        <rdfs:label>has older numeric age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasPropertyMeasure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasPropertyMeasure">
+        <rdfs:comment>Defintion by GeoScienceML 4.1 http://docs.opengeospatial.org/is/16-008/16-008.html#180
+The propertyMeasure property (SWE::Quantity) is a scalar measurement of the physical property of a rock material, unit or structure.</rdfs:comment>
+        <rdfs:label>has property measure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNumericAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#hasYoungerNumericAge">
+        <rdfs:label>has younger numeric age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#isMetamorphic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#isMetamorphic">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This property indicates if a GeologicUnit is metamorphic or not (boolean)</rdfs:comment>
+        <rdfs:label>is metamorphic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#obeyToLawOfSuperposition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#obeyToLawOfSuperposition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This property indicates if a GeologicUnit obeys to Law of Superposition (Defnition by Wikipedia https://en.wikipedia.org/wiki/Law_of_superposition &quot;In undeformed stratigraphic sequences, the oldest strata will be at the bottom of the sequence&quot;)</rdfs:comment>
+        <rdfs:label>obey to law of superposition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/ontogeonous/ontogeonous_property#observableInOutcrop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/ontogeonous/ontogeonous_property#observableInOutcrop">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>observable in outcrop</rdfs:label>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
